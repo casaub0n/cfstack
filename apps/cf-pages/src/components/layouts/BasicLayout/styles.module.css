@@ -1,0 +1,9 @@
+.container {
+  /* padding-left: 128px; */
+  display: grid;
+  place-content: center;
+}
+
+.content {
+  min-height: calc(100vh - 180px);
+}
