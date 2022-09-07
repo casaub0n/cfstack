@@ -1,34 +1,36 @@
-- name: Check for file changes
-  uses: dorny/paths-filter@v2
-  id: changes
-  with:
-    token: ${{ github.token }}
-    filters: .github/workflows/filters.yml
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: dorny/paths-filter@v2
+      id: filter
+      with:
+        token: ${{ github.token }}
+        filters: .github/workflows/filters.yml
 
-- if: steps.changes.outputs.frontend == 'true'
-  name: CI
-  uses: actions/checkout@v3.0.0
-  # TODO: which branch do we need this action https://gist.github.com/cecilemuller/437d7340b9f095cf5635dc9780a05092
-  on: [push]
-  jobs:
+- name: Cloudflare pages build
+  if: steps.filter.outputs.cfpage == 'true'
+  # TODO: which branch do we need this action https://gist.github.com/cecilemuller/437d7340b9f095cf5635dc9780a05092  
+  run:
     build:
       timeout-minutes: 10
       name: Build check
       runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [16.x]
+      strategy:
+        matrix:
+          node-version: [16.x]
 
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'yarn'
-      - name: yarn install, build
-        run: |
-          yarn install
-          yarn build
-        env:
-          CI: true
+      steps:
+        - uses: actions/setup-node@v3
+          with:
+            node-version: ${{ matrix.node-version }}
+            cache: 'yarn'
+        - name: yarn install, build
+          run: |
+            yarn install
+            yarn build
+          env:
+            CI: true
