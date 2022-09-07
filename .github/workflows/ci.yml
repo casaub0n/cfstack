@@ -15,7 +15,7 @@ jobs:
       id: filter
       with:
         filters:
-          cf_pages: 'apps/cf-pages/**'
+          cfpage: 'apps/cf-pages/**'
 
     - name: Cloudflare pages build
       if: steps.filter.outputs.cfpage == 'true'
