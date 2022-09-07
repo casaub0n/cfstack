@@ -5,7 +5,7 @@
   id: changes
   with:
     token: ${{ github.token }}
-    filters: .github/filters.yml
+    filters: .github/workflows/filters.yml
 
 - if: steps.changes.outputs.frontend == 'true'
   name: CI
