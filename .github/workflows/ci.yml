@@ -14,7 +14,6 @@ jobs:
     - uses: dorny/paths-filter@v2
       id: filter
       with:
-        token: ${{ github.token }}
         filters: |
           cf_pages:
             -  'apps/cf-pages/**'
@@ -25,7 +24,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'yarn'
-      - name: yarn install, build
         run: |
           yarn install
           yarn build
