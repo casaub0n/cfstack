@@ -2,6 +2,7 @@ name: CI
 on: [push]
 jobs:
   build:
+    timeout-minutes: 10
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -11,14 +12,9 @@ jobs:
         token: ${{ github.token }}
         filters: .github/workflows/filters.yml
 
-name: Cloudflare pages build
-  if: steps.filter.outputs.cfpage == 'true'
-  # TODO: which branch do we need this action https://gist.github.com/cecilemuller/437d7340b9f095cf5635dc9780a05092
-    build:
-      timeout-minutes: 10
-      name: Build check
-      runs-on: ubuntu-latest
-
+    - name: Cloudflare pages build
+      if: steps.filter.outputs.cfpage == 'true'
+      # TODO: which branch do we need this action https://gist.github.com/cecilemuller/437d7340b9f095cf5635dc9780a05092
       strategy:
         matrix:
           node-version: [16.x]
