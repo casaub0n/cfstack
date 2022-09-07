@@ -1,0 +1,6 @@
+backend_ci: &cfpage
+  - '.github/workflows/ci.yml'
+
+backend:
+  - *cfpage
+  - 'apps/cf-pages/**'

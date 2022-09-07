@@ -1,16 +1,25 @@
+- uses: actions/checkout@v3.0.0
 
-name: CI
-# TODO: which branch do we need this action https://gist.github.com/cecilemuller/437d7340b9f095cf5635dc9780a05092
-on: [push]
-jobs:
-  build:
-    timeout-minutes: 10
-    name: Build check
-    runs-on: ubuntu-latest
+- name: Check for file changes
+  uses: dorny/paths-filter@v2
+  id: changes
+  with:
+    token: ${{ github.token }}
+    filters: .github/filters.yml
+
+- if: steps.changes.outputs.frontend == 'true'
+  name: CI
+  # TODO: which branch do we need this action https://gist.github.com/cecilemuller/437d7340b9f095cf5635dc9780a05092
+  on: [push]
+  jobs:
+    build:
+      timeout-minutes: 10
+      name: Build check
+      runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [16.x]
 
     steps:
       - uses: actions/checkout@v2
