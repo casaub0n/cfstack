@@ -17,7 +17,7 @@ jobs:
         token: ${{ github.token }}
         filters: |
           cf_pages:
-            - 'apps/cf-pages/**'
+            -  'apps/cf-pages/**'
 
     - name: Cloudflare pages build
       if: steps.filter.outputs.cfpage == 'true'
