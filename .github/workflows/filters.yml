@@ -1,6 +1,0 @@
-cfpage_ci: &cfpage
-  - '.github/workflows/ci.yml'
-
-cfpage:
-  - *cfpage
-  - 'apps/cf-pages/**'
