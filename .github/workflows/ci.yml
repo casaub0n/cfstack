@@ -1,3 +1,5 @@
+name: CI
+on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -9,10 +11,9 @@ jobs:
         token: ${{ github.token }}
         filters: .github/workflows/filters.yml
 
-- name: Cloudflare pages build
+name: Cloudflare pages build
   if: steps.filter.outputs.cfpage == 'true'
-  # TODO: which branch do we need this action https://gist.github.com/cecilemuller/437d7340b9f095cf5635dc9780a05092  
-  run:
+  # TODO: which branch do we need this action https://gist.github.com/cecilemuller/437d7340b9f095cf5635dc9780a05092
     build:
       timeout-minutes: 10
       name: Build check
