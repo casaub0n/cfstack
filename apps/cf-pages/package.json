@@ -26,8 +26,8 @@
     "ioredis": "5.2.3",
     "next": "12.2.5",
     "next-session": "4.0.5",
-    "react": "18.1.0",
-    "react-dom": "18.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-hook-form": "7.34.2",
     "typescript": "4.8.2",
     "zod": "3.18.0"
