@@ -1,3 +1,5 @@
+# https://turborepo.org/docs/ci/github-actions
+# https://zenn.dev/nwtgck/articles/1fdee0e84e5808
 name: Cloudflare Deploy by GitHub Actions
 on: [push]
 
@@ -26,6 +28,8 @@ jobs:
           yarn export
         env:
           CI: true
+          TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+          TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
      
       - name: Publish to Cloudflare Pages
         id: cloudflare_pages_deploy
