@@ -39,3 +39,7 @@ data
 
 # reports
 __reports__
+
+# https://github.com/vercel/turborepo/discussions/1214
+# turbo
+.turbo
