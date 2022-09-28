@@ -1,9 +1,7 @@
-import { AppPropsWithLayout } from "@/lib/next/types";
+import { AppPropWithLayout } from "@/types/next/type";
 import "../../public/css/reset.css";
 
-function MyApp({ Component, pageProps }: AppPropsWithLayout) {
+export default function MyApp({Component, pageProps}: AppPropWithLayout) {
   const getLayout = Component.getLayout ?? ((page) => page);
-  return getLayout(<Component {...pageProps} />);
+  return getLayout(<Component {...pageProps} />)
 }
-
-export default MyApp;
