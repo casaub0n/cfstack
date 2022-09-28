@@ -1,0 +1,11 @@
+.main {
+  /* max-width: 1024px; */
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding: 3rem 1.5rem;
+}
+
+/* https://gihyo.jp/article/2022/08/tfc005-modern_css */
+.section {
+  scroll-margin-top: 60px;
+}

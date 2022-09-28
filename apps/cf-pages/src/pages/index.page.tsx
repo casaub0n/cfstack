@@ -1,8 +1,10 @@
-import { BasicLayout } from "@/components/layouts/BasicLayout/BasicLayout";
-import { TopMain } from "@/components/templates/TopMain";
-import { NextPageWithLayout } from "@/lib/next/types";
+import Head from 'next/head'
+import { NextPageWithLayout } from '@/types/next/type'
+import { Layout } from '@/components/layouts'
+import { Main } from "@/components/templates/Main"
 
-const Page: NextPageWithLayout = () => <TopMain />;
-Page.getLayout = BasicLayout;
+const IndexPage: NextPageWithLayout = () => <Main />
 
-export default Page;
+IndexPage.getLayout = Layout;
+
+export default IndexPage

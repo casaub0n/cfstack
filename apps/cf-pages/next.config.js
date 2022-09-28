@@ -1,3 +1,4 @@
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   swcMinify: true,
@@ -7,6 +8,5 @@ const nextConfig = {
     loader: 'cloudinary',
     path: 'https://res.cloudinary.com/dycpos4uc/'
   }
-};
-
+}
 module.exports = nextConfig;
