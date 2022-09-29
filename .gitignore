@@ -10,8 +10,8 @@ node_modules
 /coverage
 
 # next.js
-/.next/
-/out/
+/.next
+/out
 
 # production
 /build
@@ -42,3 +42,5 @@ data
 __reports__
 
 .turbo
+.next
+out
