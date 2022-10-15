@@ -25,8 +25,8 @@ Follow this link https://zenn.dev/nwtgck/articles/1fdee0e84e5808
 ### How to get TURBO_TEAM and URBO_TOKEN
 Follow this link https://turborepo.org/docs/ci/github-actions
 
-### How to do in your local development
-If you neet to use build cache:
+### How to use local cache to build
+If you neet local cache:
 ```console
 $ yarn turbo login
 $ yarn turbo link
