@@ -1,4 +1,5 @@
 import { pageTitle } from "@/components/meta";
+import { EmptyRoom } from "@/components/organisms/emptyroom";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "./styles.module.css";
@@ -9,6 +10,7 @@ export const Main = () => {
       <Head>
         <title>{pageTitle("トップページ")}</title>
       </Head>
+      <EmptyRoom />
       <section className={styles.section}>
         <h2>エーワンハウジング吉田</h2>
         <Image
