@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import { NextPageWithLayout } from '@/types/next/type'
 import { Layout } from '@/components/layouts'
-import { Main } from "@/components/templates/Main"
+import { Top } from "@/components/templates/Top"
 
-const IndexPage: NextPageWithLayout = () => <Main />
+const IndexPage: NextPageWithLayout = () => <Top />
 
 IndexPage.getLayout = Layout;
 
