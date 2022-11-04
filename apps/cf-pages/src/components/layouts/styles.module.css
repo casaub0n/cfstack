@@ -1,22 +1,16 @@
 .container {
   min-height: 100vh;
-  /* width: 1366px;
-  height: 768px; */
-
   display: grid;
   grid:
     "site_header" auto
     "content" 1fr
     "footer" auto
     / 1fr;
-  gap: 8px;
+  gap: 0em;
 }
 
 .content {
   grid-area: content;
-  max-width: 680px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 2.5em 1.5em;
+  margin: 0px auto;
 }
