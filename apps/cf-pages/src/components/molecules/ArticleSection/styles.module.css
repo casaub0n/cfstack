@@ -1,0 +1,24 @@
+.container > p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.container > h2 {
+  display: block;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+
+  /* cnMfSp */
+  margin-top: 0px;
+  font-size: 1.80203em;
+  font-weight: bold;
+  margin-bottom: 0.8em;
+  transition: color 400ms ease-in-out 0s;
+
+  line-height: 1.5;
+}

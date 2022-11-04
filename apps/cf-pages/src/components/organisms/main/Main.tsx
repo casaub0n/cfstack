@@ -1,9 +1,10 @@
+import { ArticleSection } from "@/components/molecules/ArticleSection";
 import Image from "next/image";
 import styles from "./styles.module.css";
 
 export const Main = () => {
   return (
-    <section className={styles.section}>
+    <ArticleSection>
       <h2>エーワンハウジング吉田</h2>
       <Image
         alt="cld-sample"
@@ -41,6 +42,6 @@ export const Main = () => {
         <li>FAX. 03-3957-8442</li>
         <li>mail. a.one.housing@gmail.com</li>
       </ul>
-    </section>
+    </ArticleSection>
   );
 };

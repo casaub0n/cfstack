@@ -6,7 +6,7 @@ import styles from "./styles.module.css";
 
 export const Top = () => {
   return (
-    <main className={styles.main}>
+    <main className={styles.content}>
       <Head>
         <title>{pageTitle("トップページ")}</title>
       </Head>
