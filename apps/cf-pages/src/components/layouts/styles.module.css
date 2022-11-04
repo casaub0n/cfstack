@@ -6,18 +6,11 @@
     "content" 1fr
     "footer" auto
     / 1fr;
-  gap: 8em;
+  gap: 0em;
 }
 
 .content {
   grid-area: content;
   padding: 2.5em 1.5em;
   margin: 0px auto;
-}
-
-@media (min-width: 75em) {
-  .content {
-    max-width: 75em;
-    padding: unset;
-  }  
 }
