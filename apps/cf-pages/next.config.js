@@ -6,7 +6,7 @@ const nextConfig = {
   pageExtensions: ["page.tsx", "api.ts"],
   images: {
     loader: 'cloudinary',
-    path: 'https://res.cloudinary.com/dycpos4uc/'
+    path: 'https://res.cloudinary.com/dycpos4uc/image/upload'
   }
 }
 module.exports = nextConfig;

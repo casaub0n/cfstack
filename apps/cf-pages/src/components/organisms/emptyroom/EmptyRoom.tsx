@@ -1,26 +1,23 @@
 import { ArticleSection } from "@/components/molecules/ArticleSection";
-import Image from "next/image";
+import Image, { ImageLoaderProps } from "next/image";
 import Link from "next/link";
 import styles from "./styles.module.css"
+
+const myLoader = ({ src, width, quality }: ImageLoaderProps) => {
+  return `https://res.cloudinary.com/dycpos4uc/image/upload/v1665804278/${src}?w=${width}&q=${quality || 75}`
+}
 
 export const EmptyRoom = () => {
   return (
     <ArticleSection>
       <h2>板橋駅前桜ビル401号室　内見受付中</h2>
-      {/* <Image
-        alt="sakura building living room"
-        src="sakura-building-livingroom.jpg"
-        width={480}
-        height={640}
-        layout={"responsive"} /> */}
-      {/* https://nextjs.org/docs/basic-features/image-optimization */}
       <div className={styles.img_block}>
         <Image
           alt="sakura building living room"
-          src="sakura-building-livingroom.jpg"
+          loader={myLoader}
+          src="/sakura-building-livingroom.jpg"
           width={480}
           height={640}
-          // layout={"responsive"}
           style={{
             maxWidth: '100%',
             height: 'auto'

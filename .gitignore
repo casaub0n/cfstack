@@ -44,3 +44,4 @@ __reports__
 .turbo
 .next
 out
+.env
