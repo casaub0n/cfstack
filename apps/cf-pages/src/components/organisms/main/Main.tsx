@@ -1,17 +1,15 @@
 import { ArticleSection } from "@/components/molecules/ArticleSection";
-import Image from "next/image";
+import Image, { ImageLoaderProps } from "next/image";
+// import { myLoader } from "@/utils/myLoader";
+
+const myLoader = ({ src, width, quality }: ImageLoaderProps) => {
+  return `https://res.cloudinary.com/dycpos4uc/image/upload/v1662198231/${src}?w=${width}&q=${quality || 75}`
+}
 
 export const Main = () => {
   return (
     <ArticleSection>
       <h2>エーワンハウジング吉田</h2>
-      <Image
-        alt="cld-sample"
-        src={"sample.jpg"}
-        width={256}
-        height={171}
-        layout={"responsive"}
-      />
       <p>
         <b>お部屋をお探しの方、こんにちは！吉田と申します。</b>
         <br />
