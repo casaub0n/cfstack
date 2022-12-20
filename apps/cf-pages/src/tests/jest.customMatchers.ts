@@ -2,6 +2,15 @@ import { getRoles } from "@testing-library/react";
 
 interface CustomMatchers<R = unknown> {
   toBeAtom: () => R;
+  toBeMolecule: () => R;
+}
+
+declare global {
+  namespace jest {
+    interface Expect extends CustomMatchers {}
+    interface Matchers<R> extends CustomMatchers<R> {}
+    interface InverseAsymmetricMatchers extends CustomMatchers {}
+  }
 }
 
 const ignoresRoles = ["generic", "presentation"];
@@ -59,12 +68,12 @@ function includeMaybeLandmarkRole(keys: string[]) {
   return keys.map((key) => maybeLandmarkRoles.includes(key)).some(Boolean);
 }
 
-const mainRoles = [
-  ""
-]
-
 function includeMainRole(keys: string[]) {
   return keys.includes("main");
+}
+
+function fail(message: string) {
+  return { pass: false, message: () => message };
 }
 
 function toBeAtom(container: HTMLElement) {
@@ -88,4 +97,21 @@ function toBeAtom(container: HTMLElement) {
   return { pass: true, message: () => "it Atom"};
 }
 
-expect.extend({ toBeAtom });
+function toBeMolecule(container: HTMLElement) {
+  const keys = getRoleKeys(container);
+  if (!(keys.length >= 2)) {
+    return fail("Molecule should structed by multiple role.");
+  }
+  if (includeLandmarkRole(keys)) {
+    return fail("Molecule should not include landmark role.");
+  }
+  if (includeWindowRole(keys)) {
+    return fail("Molecule should not include window role.");
+  }
+  if (includeMainRole(keys)) {
+    return fail("Molecule should not include main role.");
+  }
+  return { pass: true, message: () => "it Molecule" };
+}
+
+expect.extend({ toBeAtom, toBeMolecule });
