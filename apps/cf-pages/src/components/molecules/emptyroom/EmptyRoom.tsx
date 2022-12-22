@@ -1,5 +1,5 @@
-import { ContentText } from "@/components/atom/ContentText";
-import { ArticleSection } from "@/components/molecules/ArticleSection";
+import { ContentText } from "@/components/atoms/ContentText";
+import { ArticleSection } from "@/components/atoms/ArticleSection";
 import { cloudinaryLoader } from "@/utils/cloudinaryLoader";
 import clsx from "clsx";
 import Image from "next/image";

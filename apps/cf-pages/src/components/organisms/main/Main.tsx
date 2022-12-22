@@ -1,4 +1,4 @@
-import { ArticleSection } from "@/components/molecules/ArticleSection";
+import { ArticleSection } from "@/components/atoms/ArticleSection";
 
 export const Main = () => {
   return (
