@@ -3,6 +3,8 @@ import { getRoles } from "@testing-library/react";
 interface CustomMatchers<R = unknown> {
   toBeAtom: () => R;
   toBeMolecule: () => R;
+  toBeOrganism: () => R;
+  toBeTemplate: () => R;
 }
 
 declare global {
@@ -114,4 +116,32 @@ function toBeMolecule(container: HTMLElement) {
   return { pass: true, message: () => "it Molecule" };
 }
 
-expect.extend({ toBeAtom, toBeMolecule });
+function toBeOrganism(container: HTMLElement) {
+  const keys = getRoleKeys(container);
+  if (!(keys.length >= 2)) {
+    return fail("Organism should structed by multiple role.");
+  }
+  if (
+    !(
+      includeLandmarkRole(keys) ||
+      includeMaybeLandmarkRole(keys) ||
+      includeWindowRole(keys)
+    )
+  ) {
+    return fail("Organism should structed by landmark or window role.");
+  }
+  if (includeMainRole(keys)) {
+    return fail("Organism should not include main role.");
+  }
+  return { pass: true, message: () => "it Organism" };
+}
+
+function toBeTemplate(container: HTMLElement) {
+  const keys = getRoleKeys(container);
+  if (!includeMainRole(keys)) {
+    return fail("Template should include main role.");
+  }
+  return { pass: true, message: () => "it Template" };
+}
+
+expect.extend({ toBeAtom, toBeMolecule, toBeOrganism, toBeTemplate });
