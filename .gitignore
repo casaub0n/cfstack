@@ -45,3 +45,5 @@ __reports__
 .next
 out
 .env
+.swc
+coverage
