@@ -1,6 +1,93 @@
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
 
+describe("Template", () => {
+  test("<main>(role=main)", () => {
+    const { container } = render(
+      <main>
+        <h2>test</h2>
+        <button>+1</button>
+      </main>,
+    );
+    expect(container).not.toBeAtom();
+    expect(container).not.toBeMolecule();
+    expect(container).not.toBeOrganism();
+    expect(container).toBeTemplate();
+  });
+});
+
+describe("Organisms", () => {
+  function asserts(container: HTMLElement) {
+    expect(container).not.toBeAtom();
+    expect(container).not.toBeMolecule();
+    expect(container).toBeOrganism();
+    expect(container).not.toBeTemplate();
+  }
+  test("<aside>(role=complementary)", () => {
+    const { container } = render(
+      <aside>
+        <h2>Test</h2>
+        <button>+1</button>
+      </aside>,
+    );
+    asserts(container);
+  });
+  test("<form>(role=form)", () => {
+    const { container } = render(
+      <form aria-label='test'>
+        <h2 id='test'>Test</h2>
+        <button>+1</button>
+      </form>,
+    );
+    asserts(container);
+  });
+  test("<form>(role=search)", () => {
+    const { container } = render(
+      <form role='search'>
+        <h2>Test</h2>
+        <button>+1</button>
+      </form>,
+    );
+    asserts(container);
+  });
+  test("<nav>(role=navigation)", () => {
+    const { container } = render(
+      <nav>
+        <h2>Test</h2>
+        <button>+1</button>
+      </nav>,
+    );
+    asserts(container);
+  });
+  test("<section>(role=region)", () => {
+    const { container } = render(
+      <section aria-labelledby='test'>
+        <h2 id='test'>Test</h2>
+        <button>+1</button>
+      </section>,
+    );
+    asserts(container);
+  });
+  test("<div>(role=alertdialog)", () => {
+    const { container } = render(
+      <div role='alertdialog'>
+        <h2 id='test'>Test</h2>
+        <button>+1</button>
+      </div>,
+    );
+    asserts(container);
+  });
+  test("<div>(role=dialog)", () => {
+    const { container } = render(
+      <div role='dialog'>
+        <h2 id='test'>Test</h2>
+        <button>+1</button>
+      </div>,
+    );
+    asserts(container);
+  });
+});
+
 describe("Atoms", () => {
   function asserts(container: HTMLElement) {
     expect(container).toBeAtom();
@@ -17,7 +104,7 @@ describe("Atoms", () => {
     asserts(container);
   });
   test("<a>(role=link)", () => {
-    const { container } = render(<a href="#">test</a>);
+    const { container } = render(<a href='#'>test</a>);
     asserts(container);
   });
   test("<button>(role=button)", () => {
@@ -25,7 +112,7 @@ describe("Atoms", () => {
     asserts(container);
   });
   test("<input>(role=textbox)", () => {
-    const { container } = render(<input type="text" />);
+    const { container } = render(<input type='text' />);
     asserts(container);
   });
   test("<textarea>(role=textbox)", () => {
@@ -37,24 +124,24 @@ describe("Atoms", () => {
       <div>
         {/* disable eslint. because this is test for testing custom matcher. */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img alt="picture" />
+        <img alt='picture' />
         <p>test</p>
-      </div>
+      </div>,
     );
     asserts(container);
   });
   test("<label>(role=none)", () => {
     const { container } = render(
       <label>
-        <input type="checkbox" id="check" />
+        <input type='checkbox' id='check' />
         Test
-      </label>
+      </label>,
     );
     const { container: htmlFor } = render(
       <>
-        <label htmlFor="check">Test</label>
-        <input type="checkbox" id="check" />
-      </>
+        <label htmlFor='check'>Test</label>
+        <input type='checkbox' id='check' />
+      </>,
     );
     asserts(container);
     asserts(htmlFor);
@@ -63,7 +150,7 @@ describe("Atoms", () => {
     const { container } = render(
       <div>
         <p>test</p>
-      </div>
+      </div>,
     );
     asserts(container);
   });
