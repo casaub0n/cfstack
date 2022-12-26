@@ -8,5 +8,5 @@ describe("src/component/atoms/ContentText.test.tsx", () => {
   test("Atom", () => {
     const { container } = render(<Default />);
     expect(container).toBeAtom();
-  })
+  });
 });
