@@ -1,6 +1,6 @@
 import { composeStories } from "@storybook/react";
 import { render } from "@testing-library/react";
-import * as stories from "./ContentText.stories";
+import * as stories from "./ArticleSection.stories";
 
 const { Default } = composeStories(stories);
 
