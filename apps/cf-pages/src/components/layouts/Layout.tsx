@@ -1,7 +1,7 @@
-import { Header } from "@/components/organisms/header"
-import { Footer } from "@/components/organisms/footer"
-import { ReactElement } from "react"
-import styles from "./styles.module.css"
+import { Header } from "@/components/organisms/header";
+import { Footer } from "@/components/organisms/footer";
+import { ReactElement } from "react";
+import styles from "./styles.module.css";
 
 export const Layout = (page: ReactElement) => {
   return (
@@ -10,5 +10,5 @@ export const Layout = (page: ReactElement) => {
       <div className={styles.content}>{page}</div>
       <Footer />
     </div>
-  )
-}
+  );
+};
