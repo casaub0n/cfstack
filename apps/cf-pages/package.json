@@ -48,6 +48,6 @@
     "scaffdog": "^2.4.0",
     "serve": "14.2.0",
     "storybook-addon-next-router": "4.0.2",
-    "typescript": "4.9.4"
+    "typescript": "4.9.5"
   }
 }
