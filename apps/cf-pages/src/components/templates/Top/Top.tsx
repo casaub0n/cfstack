@@ -10,7 +10,6 @@ export const Top = () => {
       <Head>
         <title>{pageTitle("トップページ")}</title>
       </Head>
-      <EmptyRoom />
       <Main />
     </main>
   );
