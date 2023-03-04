@@ -20,6 +20,13 @@
     "dev": {
       "cache": false
     },
+    "storybook": {
+      "cache": false
+    },
+    "build:storybook": {
+      "dependsOn": ["^build:storybook"],
+      "outputs": ["storybook-static/**"]
+    },
     "deploy": {
       "dependsOn": ["build", "test", "lint"],
       "outputs": []

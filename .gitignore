@@ -47,3 +47,5 @@ out
 .env
 .swc
 coverage
+
+storybook-static
