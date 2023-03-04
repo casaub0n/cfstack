@@ -39,6 +39,13 @@ jobs:
           TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
           TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
 
+      - name: Storybook static build
+        run: yarn build:storybook
+        env:
+          CI: true
+          TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+          TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+
       - name: Publish to Cloudflare Pages
         id: cloudflare_pages_deploy
         uses: cloudflare/pages-action@1
