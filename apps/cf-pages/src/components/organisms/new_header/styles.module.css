@@ -1,0 +1,9 @@
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+	/* Invite */
+.invite .text-container {
+	margin-bottom: 0;
+}
