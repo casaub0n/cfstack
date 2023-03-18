@@ -4,7 +4,17 @@ module.exports = {
   stories: ["../src/**/*.stories.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
   addons: [
     "@storybook/addon-links",
-    "@storybook/addon-essentials",
+    {
+      name: '@storybook/addon-essentials',
+      options: {
+        actions: true,
+        backgrounds: true,
+        controls: false,
+        docs: false,
+        viewport: true,
+        toolbars: true,
+      }
+    },
     "@storybook/addon-interactions",
     "storybook-addon-next-router",
   ],
