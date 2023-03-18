@@ -9,8 +9,10 @@ describe("src/components/organisms/navbar/NavBar.test.tsx", () => {
     const { container } = render(<Default />);
     expect(container).toBeOrganism();
   });
-  test("[role=banner]", () => {
-    const { getByRole } = render(<Default />)
-    expect(getByRole("banner")).toBeInTheDocument();
-  })
+  test("[role=navigation]を保持している", () => {
+    const { getByRole } = render(<Default />);
+    expect(
+      getByRole("navigation", { name: "メインナビゲーション" })
+    ).toBeInTheDocument();
+  });
 });

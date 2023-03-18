@@ -5,10 +5,10 @@ import clsx from "clsx";
 
 export const NavBar = memo(function BasicHeaderBase() {
   return (
-    <div className="navbar">
+    <aside className="navbar">
       <div className="container flex">
         <Link passHref href="/" className={clsx(styles.logoImage)}>Home</Link>
-        <nav>
+        <nav aria-label="メインナビゲーション">
           <ul>
             <li><a href="#services">Services</a></li>
             <li><a href="#benefits">Benefits</a></li>
@@ -17,6 +17,6 @@ export const NavBar = memo(function BasicHeaderBase() {
           </ul>
         </nav>
       </div>
-    </div>
+    </aside>
   );
 });
