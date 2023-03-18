@@ -5,7 +5,7 @@ import clsx from "clsx";
 
 export const Header = memo(function BasicHeaderBase() {
   return (
-    <header>
+    <header className={clsx(styles.module)}>
       <div className={clsx(styles.container)}>
         <div className={clsx(styles.textContainer)}>
           <h1 className={clsx(styles.h1Large)}>A ONE HOUSING YOSHIDA</h1>

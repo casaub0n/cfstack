@@ -3,7 +3,7 @@
 	padding: 0 15px;
 }
 
-header {
+.module {
 	padding-top: 13rem;
 	padding-bottom: 9rem;
 	background: linear-gradient(to bottom right, #1c3633, rgba(28, 54, 51, 70%)), url('https://res.cloudinary.com/dycpos4uc/sample.jpg') center center no-repeat;
