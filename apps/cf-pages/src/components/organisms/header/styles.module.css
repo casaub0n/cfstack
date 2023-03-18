@@ -1,82 +1,61 @@
-/* 
-** The Header Media Queries **
-** Tweak as per your needs **
-*/
-
-.brand {
-  font-weight: bold;
-  font-size: 20px;
+.container {
+	margin: 0 auto;
+	padding: 0 15px;
 }
 
-.site_header {
-  grid-area: site_header;
-  position: relative;
-  background-color: #F2F4F8;
+.module {
+	padding-top: 13rem;
+	padding-bottom: 9rem;
+	background: linear-gradient(to bottom right, #1c3633, rgb(28, 54, 51 / 70%)), url('https://res.cloudinary.com/dycpos4uc/sample.jpg') center center no-repeat;
+	background-size: cover;
+	text-align: center;
 }
 
-.site_header__wrapper {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+header .h1-large {
+	width: 50rem;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 4.75rem;
+	line-height: 5.75rem;
+	margin-bottom: 2.5rem;
+	color: #fff;
 }
 
-.wrapper {
-  max-width: 1140px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-left: auto;
-  margin-right: auto;
+.btn-outline-lg {
+	display: inline-block;
+	padding: 1.875rem 3rem;
+	border: 2px solid #252936;
+	border-radius: 32px;
+	background-color: transparent;
+	color: #252936;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 0;
+	text-decoration: none;
+	transition: all 0.2s;
 }
 
-@media (min-width: 600px) {
-  .site_header__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  .nav__wrapper {
-    display: flex;
-  }
-
-  .nav__toggle {
-    display: none;
-  }
-}
-/* @media (min-width: 600px) {
-  .nav__wrapper {
-    display: flex; } } */
-
-@media (max-width: 599px) {
-  .nav__wrapper {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    left: 0;
-    z-index: -1;
-    background-color: #F2F4F8;
-    visibility: hidden;
-    opacity: 0;
-    transform: translateY(-100%);
-    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-    z-index: 2;
-  }
-  .nav__wrapper.active {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  .nav__toggle {
-    display: block;
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-  }
+header .btn-outline-lg {
+	border: 2px solid #fff;
+	color: #fff;
 }
 
-.nav__item a {
-  display: block;
-  padding: 1.5rem 1rem;
+.btn-outline-lg:hover {
+	background-color: #252936;
+	color: #fff;
+	text-decoration: none;
+}
+
+header .btn-outline-lg:hover {
+	background-color: #fff;
+	color: #252936;
+}
+
+/* Invite */
+.invite .text-container {
+	margin-bottom: 0;
+}
+
+.features .text-container {
+	margin-bottom: 2rem;
 }
