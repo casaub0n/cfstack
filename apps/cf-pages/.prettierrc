@@ -14,5 +14,9 @@
   "singleAttributePerLine": false,
   "jsxSingleQuote": true,
   "printWidth": 100,
-  "useTabs": false
+  "useTabs": false,
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-prettier"
+  ]
 }

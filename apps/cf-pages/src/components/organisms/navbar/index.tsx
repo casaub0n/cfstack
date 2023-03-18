@@ -1,2 +1,2 @@
 /* istanbul ignore next */
-export * from "./Header";
+export * from "./NavBar";

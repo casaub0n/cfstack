@@ -1,13 +1,13 @@
 import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
-import { Header } from "./Header";
+import { NavBar } from "./NavBar";
 
-type T = typeof Header;
+type T = typeof NavBar;
 type Story = ComponentStoryObj<T>;
 
 export default {
-  component: () => <Header />,
+  component: () => <NavBar />,
 } as ComponentMeta<T>;
 
 export const Default: Story = {
-  storyName: "Header",
+  storyName: "Nav Bar",
 };
