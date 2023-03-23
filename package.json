@@ -15,6 +15,6 @@
     "build:storybook": "turbo run build:storybook"
   },
   "devDependencies": {
-    "turbo": "1.8.3"
+    "turbo": "1.8.5"
   }
 }
