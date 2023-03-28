@@ -69,10 +69,16 @@ jobs:
           CI: true
           TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
           TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+      - name: Generate tests report
+        run: ${{ steps.detect-package-manager.outputs.runner }} test
+        env:
+          CI: true
+          TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+          TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: ./apps/cf-pages/storybook-static
+          path: ./apps/cf-pages/gh
 
   # Deployment job
   deploy:
