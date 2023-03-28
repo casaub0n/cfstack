@@ -13,6 +13,7 @@
     "storybook": "start-storybook -p 6006",
     "build:storybook": "build-storybook",
     "test": "jest --coverage",
+    "test:watch": "jest --watch",
     "gtest": "scaffdog generate"
   },
   "dependencies": {
