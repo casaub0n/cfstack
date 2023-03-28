@@ -11,8 +11,9 @@
     "start": "serve out",
     "lint": "next lint",
     "storybook": "start-storybook -p 6006",
-    "build:storybook": "build-storybook",
+    "build:storybook": "build-storybook -o gh/storybook-static",
     "test": "jest --coverage",
+    "test:watch": "jest --watch",
     "gtest": "scaffdog generate"
   },
   "dependencies": {
