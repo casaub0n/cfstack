@@ -1,4 +1,3 @@
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   swcMinify: true,
@@ -7,6 +6,9 @@ const nextConfig = {
   images: {
     loader: 'cloudinary',
     path: 'https://res.cloudinary.com/dycpos4uc/image/upload'
-  }
+  },
+  output: "export",
+  distDir: "dist"
 }
+
 module.exports = nextConfig;

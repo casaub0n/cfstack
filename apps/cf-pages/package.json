@@ -5,9 +5,6 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "preexport": "npm run build",
-    "export": "next export",
-    "prestart": "npm run export",
     "start": "serve out",
     "lint": "next lint",
     "storybook": "start-storybook -p 6006",

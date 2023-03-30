@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-     
+
       # ここで好きなビルド処理をする
       - name: Pre Action for node.js
         uses: actions/setup-node@v3
@@ -24,9 +24,9 @@ jobs:
           cache: yarn
       - name: yarn install
         run: yarn install
-      
+
       - name: Build and Cache
-        run: yarn export
+        run: yarn build
         env:
           CI: true
           TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
@@ -53,9 +53,9 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           projectName: public-aonecom
-          directory: ./apps/cf-pages/out
+          directory: ./apps/cf-pages/dist
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-      
+
       - name: Add publish URL as commit status
         uses: actions/github-script@v6
         with:
