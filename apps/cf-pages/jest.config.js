@@ -18,7 +18,7 @@ const customJestConfig = {
     [
       "jest-html-reporters",
       {
-        publicPath: "gh/__reports__",
+        publicPath: "__reports__",
         filename: "jest.html",
       },
     ],
