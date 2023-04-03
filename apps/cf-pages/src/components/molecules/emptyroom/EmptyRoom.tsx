@@ -5,6 +5,7 @@ import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./styles.module.css";
+import React from "react";
 
 type Props = {
   className?: string
@@ -13,7 +14,7 @@ type Props = {
 export const EmptyRoom: React.FC<Props> = ({ className }) => {
   return (
     <ArticleSection>
-      <h2>板橋駅前桜ビル401号室　内見受付中</h2>
+      <h2>板橋駅前桜ビル401号室&nbsp;内見受付中</h2>
       <div className={clsx(className, styles.hero_columns, styles.switcher)} data-direction="rev">
         <div className={styles.flow}>
           <Image
