@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-     
+
       # ここで好きなビルド処理をする
       - name: Pre Action for node.js
         uses: actions/setup-node@v3
@@ -24,9 +24,16 @@ jobs:
           cache: yarn
       - name: yarn install
         run: yarn install
-      
+
       - name: Build and Cache
         run: yarn export
+        env:
+          CI: true
+          TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+          TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+
+      - name: lint
+        run: yarn lint
         env:
           CI: true
           TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
@@ -55,7 +62,7 @@ jobs:
           projectName: public-aonecom
           directory: ./apps/cf-pages/out
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-      
+
       - name: Add publish URL as commit status
         uses: actions/github-script@v6
         with:
