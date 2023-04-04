@@ -9,5 +9,5 @@ export default {
 } as ComponentMeta<T>;
 
 export const Default: Story = {
-  storyName: "Nav Bar",
+  name: "Nav Bar",
 };

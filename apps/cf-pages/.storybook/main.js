@@ -1,28 +1,20 @@
 const path = require("path");
 
 module.exports = {
-  stories: ["../src/**/*.stories.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
+  stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
   addons: [
     "@storybook/addon-links",
-    {
-      name: '@storybook/addon-essentials',
-      options: {
-        actions: true,
-        backgrounds: true,
-        controls: false,
-        docs: false,
-        viewport: true,
-        toolbars: true,
-      }
-    },
+    "@storybook/addon-essentials",
     "@storybook/addon-interactions",
-    "storybook-addon-next-router",
   ],
-  framework: "@storybook/react",
-  core: {
-    builder: "@storybook/builder-webpack5",
-  },
   staticDirs: ["../public"],
+  framework: {
+    name: "@storybook/react-webpack5",
+    options: {},
+  },
+  docs: {
+    autodocs: "tag",
+  },
   webpackFinal: async (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,
