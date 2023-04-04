@@ -13,7 +13,7 @@ module.exports = {
     "plugin:jest/style",
   ],
   rules: {
-    "jest/prefer-expect-assertions": "off",
+    "jest/expect-expect": "off",
     "no-unused-vars": "off",
     "@next/next/no-html-link-for-pages": "off",
     "react/jsx-key": "off",
