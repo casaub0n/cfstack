@@ -10,5 +10,5 @@ export default {
 } as ComponentMeta<T>;
 
 export const Default: Story = {
-  storyName: "テキスト",
+  name: "テキスト",
 };

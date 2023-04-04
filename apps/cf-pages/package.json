@@ -11,11 +11,10 @@
     "start": "serve out",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build:storybook": "build-storybook",
+    "build:storybook": "storybook build",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
-    "gtest": "scaffdog generate",
-    "build-storybook": "storybook build"
+    "gtest": "scaffdog generate"
   },
   "dependencies": {
     "@next/font": "^13.0.0",
