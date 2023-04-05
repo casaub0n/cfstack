@@ -1,19 +1,26 @@
-import React from "react";
-import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 import { ArticleSection } from "./ArticleSection";
 
-type T = typeof ArticleSection;
-type Story = ComponentStoryObj<T>;
+const meta: Meta<typeof ArticleSection> = {
+  title: "Article Section",
+  component: ArticleSection
+}
 
-export default {
-  component: () => (
-      <ArticleSection>
-        <h2>Test</h2>
-        <p>article section</p>
-      </ArticleSection>
-    ),
-} as ComponentMeta<T>;
+export default meta;
 
-export const Default: Story = {
-  name: "テキスト",
-};
+type Story = StoryObj<typeof ArticleSection>;
+
+export const Basic: Story = {
+  args: {
+    children: (
+      <>
+        <h2>Article Example: 記事画面</h2>
+        <p>記事内容です。</p>
+        <ul>
+          <li>テスト1</li>
+          <li>テスト2</li>
+        </ul>
+      </>
+    )
+  }
+}
