@@ -1,14 +1,17 @@
-import React from "react";
-import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 import { ContentText } from "./ContentText";
 
-type T = typeof ContentText;
-type Story = ComponentStoryObj<T>;
+const meta: Meta<typeof ContentText> = {
+  title: "Content text",
+  component: ContentText
+}
 
-export default {
-  component: () => <ContentText>Help!</ContentText>,
-} as ComponentMeta<T>;
+export default meta;
+
+type Story = StoryObj<typeof ContentText>;
 
 export const Default: Story = {
-  name: "テキスト",
-};
+  args: {
+    children: "Help!"
+  }
+}
