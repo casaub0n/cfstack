@@ -1,13 +1,17 @@
-import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
-import { EmptyRoom } from './EmptyRoom'
+import { Meta, StoryObj } from "@storybook/react";
+import { EmptyRoom } from "./EmptyRoom";
 
-type T = typeof EmptyRoom;
-type Story = ComponentStoryObj<T>
+const meta: Meta<typeof EmptyRoom> = {
+  title: "empty room",
+  component: EmptyRoom
+}
 
-export default {
-  component: () => <EmptyRoom />
-} as ComponentMeta<T>
+export default meta;
+
+type Story = StoryObj<typeof EmptyRoom>;
 
 export const Default: Story = {
-  name: "空き部屋確認"
-};
+  name: "Default empty room",
+  storyName: "Default",
+  tags: ["emptyroom"]
+}
