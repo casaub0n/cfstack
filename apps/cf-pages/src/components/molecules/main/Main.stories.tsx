@@ -1,13 +1,17 @@
-import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 import { Main } from "./Main";
 
-type T = typeof Main;
-type Story = ComponentStoryObj<T>;
+const meta: Meta<typeof Main> = {
+  title: "main",
+  component: Main,
+};
 
-export default {
-  component: () => <Main />,
-} as ComponentMeta<T>;
+export default meta;
+
+type Story = StoryObj<typeof Main>;
 
 export const Default: Story = {
-  name: "Main",
+  name: "Default Main",
+  storyName: "Default",
+  tags: ["main"],
 };
