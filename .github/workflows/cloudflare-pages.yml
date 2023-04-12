@@ -21,8 +21,20 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16.x
-          cache: pnpm
-      - name: pnpm install
+
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 7
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "pnpm"
+
+      - name: Install dependencies
         run: pnpm install
 
       - name: Build and Cache
