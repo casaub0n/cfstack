@@ -10,5 +10,6 @@ const nextConfig = {
     loader: "cloudinary",
     path: "https://res.cloudinary.com/dycpos4uc/image/upload",
   },
+  output: "export",
 };
 module.exports = nextConfig;
