@@ -18,9 +18,7 @@ declare global {
 const ignoresRoles = ["generic", "presentation"];
 
 function getRoleKeys(container: HTMLElement) {
-  return Object.keys(getRoles(container)).filter(
-    (key) => !ignoresRoles.includes(key)
-  );
+  return Object.keys(getRoles(container)).filter((key) => !ignoresRoles.includes(key));
 }
 
 const groupRoles = [
@@ -40,31 +38,19 @@ function includeGroupRole(keys: string[]) {
   return keys.map((key) => groupRoles.includes(key)).some(Boolean);
 }
 
-const windowRoles = [
-  "alertdialog",
-  "dialog"
-];
+const windowRoles = ["alertdialog", "dialog"];
 
 function includeWindowRole(keys: string[]) {
   return keys.map((key) => windowRoles.includes(key)).some(Boolean);
 }
 
-const landmarkRoles = [
-  "complementary",
-  "form",
-  "navigation",
-  "region",
-  "search",
-];
+const landmarkRoles = ["complementary", "form", "navigation", "region", "search"];
 
 function includeLandmarkRole(keys: string[]) {
   return keys.map((key) => landmarkRoles.includes(key)).some(Boolean);
 }
 
-const maybeLandmarkRoles = [
-  "banner",
-  "contentinfo"
-];
+const maybeLandmarkRoles = ["banner", "contentinfo"];
 
 function includeMaybeLandmarkRole(keys: string[]) {
   return keys.map((key) => maybeLandmarkRoles.includes(key)).some(Boolean);
@@ -89,14 +75,10 @@ function toBeAtom(container: HTMLElement) {
   if (includeWindowRole(keys)) {
     return fail("Atom should not include window role.");
   }
-  if (
-    includeLandmarkRole(keys) ||
-    includeMaybeLandmarkRole(keys) ||
-    includeMainRole(keys)
-  ) {
+  if (includeLandmarkRole(keys) || includeMaybeLandmarkRole(keys) || includeMainRole(keys)) {
     return fail("Atom should not include landmark role.");
   }
-  return { pass: true, message: () => "it Atom"};
+  return { pass: true, message: () => "it Atom" };
 }
 
 function toBeMolecule(container: HTMLElement) {
@@ -121,13 +103,7 @@ function toBeOrganism(container: HTMLElement) {
   if (!(keys.length >= 2)) {
     return fail("Organism should structed by multiple role.");
   }
-  if (
-    !(
-      includeLandmarkRole(keys) ||
-      includeMaybeLandmarkRole(keys) ||
-      includeWindowRole(keys)
-    )
-  ) {
+  if (!(includeLandmarkRole(keys) || includeMaybeLandmarkRole(keys) || includeWindowRole(keys))) {
     return fail("Organism should structed by landmark or window role.");
   }
   if (includeMainRole(keys)) {
@@ -144,4 +120,5 @@ function toBeTemplate(container: HTMLElement) {
   return { pass: true, message: () => "it Template" };
 }
 
+// @ts-ignore
 expect.extend({ toBeAtom, toBeMolecule, toBeOrganism, toBeTemplate });
