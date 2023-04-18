@@ -47,7 +47,7 @@ jobs:
         run: pnpm install
 
       - name: Build and Cache
-        run: pnpm export
+        run: pnpm build
         env:
           CI: true
           TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
