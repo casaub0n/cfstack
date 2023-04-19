@@ -12,6 +12,5 @@ type Story = StoryObj<typeof Top>;
 
 export const Default: Story = {
   name: "Default Top",
-  storyName: "Default",
   tags: ["Top"],
 };
