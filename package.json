@@ -3,8 +3,8 @@
   "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "build": "turbo run build",
-    "w:build": "turbo run build --no-daemon",
+    "build": "turbo run prebuild && turbo run build",
+    "w:build": "turbo run prebuild --no-daemon && turbo run build --no-daemon",
     "test": "turbo run test",
     "w:test": "turbo run test --no-daemon",
     "test:watch": "turbo run test:watch",
