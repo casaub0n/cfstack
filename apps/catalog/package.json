@@ -1,0 +1,19 @@
+{
+  "name": "@learn-monorepo-pnpm/catalog",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "storybook dev -p 6006",
+    "build": "storybook build"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "7.0.4",
+    "@storybook/addon-interactions": "7.0.4",
+    "@storybook/addon-links": "7.0.4",
+    "@storybook/react": "7.0.4",
+    "@storybook/react-vite": "7.0.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "storybook": "7.0.4"
+  }
+}
