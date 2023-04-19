@@ -12,6 +12,5 @@ type Story = StoryObj<typeof NavBar>;
 
 export const Default: Story = {
   name: "Default navbar",
-  storyName: "Default",
   tags: ["navbar"],
 };

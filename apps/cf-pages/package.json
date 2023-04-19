@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next",
+    "prebuild": "next telemetry disable",
     "build": "next build",
     "start": "serve out",
     "lint": "next lint",

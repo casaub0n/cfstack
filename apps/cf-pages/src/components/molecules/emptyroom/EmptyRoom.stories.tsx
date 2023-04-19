@@ -3,8 +3,8 @@ import { EmptyRoom } from "./EmptyRoom";
 
 const meta: Meta<typeof EmptyRoom> = {
   title: "empty room",
-  component: EmptyRoom
-}
+  component: EmptyRoom,
+};
 
 export default meta;
 
@@ -12,6 +12,5 @@ type Story = StoryObj<typeof EmptyRoom>;
 
 export const Default: Story = {
   name: "Default empty room",
-  storyName: "Default",
-  tags: ["emptyroom"]
-}
+  tags: ["emptyroom"],
+};
