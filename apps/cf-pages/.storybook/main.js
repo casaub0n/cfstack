@@ -9,9 +9,8 @@ module.exports = {
     "@storybook/addon-docs",
   ],
   staticDirs: ["../public"],
-  framework: "@storybook/react",
+  framework: "@storybook/react-webpack5",
   core: {
-    builder: "webpack5",
     disableTelemetry: true,
   },
   docs: {
