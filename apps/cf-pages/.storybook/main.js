@@ -9,9 +9,9 @@ module.exports = {
     "@storybook/addon-docs",
   ],
   staticDirs: ["../public"],
-  framework: {
-    name: "@storybook/react-webpack5",
-    options: {},
+  framework: "@storybook/react-webpack5",
+  core: {
+    disableTelemetry: true,
   },
   docs: {
     autodocs: "tag",
