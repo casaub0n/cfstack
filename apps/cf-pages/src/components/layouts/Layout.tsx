@@ -1,5 +1,5 @@
-import { Header } from "@/components/organisms/header";
-import { Footer } from "@/components/organisms/footer";
+import { Header } from "../../components/organisms/header";
+import { Footer } from "../../components/organisms/footer";
 import { ReactElement } from "react";
 import styles from "./styles.module.css";
 
