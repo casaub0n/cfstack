@@ -96,7 +96,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: ./apps/cf-pages/storybook-static
+          path: ./apps/catalog/storybook-static
 
   # Deployment job
   deploy:

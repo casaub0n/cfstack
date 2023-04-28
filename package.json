@@ -19,8 +19,6 @@
   },
   "devDependencies": {
     "turbo": "1.9.3",
-    "eslint": "^8.31.0",
-    "eslint-config-custom": "*",
     "git-cz": "^4.9.0",
     "prettier": "^2.8.2"
   },

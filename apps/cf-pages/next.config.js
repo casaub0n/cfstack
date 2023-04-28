@@ -1,8 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    forceSwcTransforms: true, // https://nextjs.org/docs/messages/swc-disabled
-  },
   swcMinify: true,
   reactStrictMode: true,
   pageExtensions: ["page.tsx", "api.ts"],
