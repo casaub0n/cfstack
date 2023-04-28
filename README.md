@@ -4,6 +4,17 @@
   </a>
 </p>
 
+This repository is the ideal monorepo for next.js
+
+I follow these technical stacks:
+- Turborepo
+- Prettier
+- ESLint
+- Jest
+- Storybook
+- GitHub actions
+- Work on Windows
+
 # documents
 
 [storybook](https://casaub0n.github.io/cfstack/)
@@ -13,8 +24,8 @@
 This software neeed [yarn](https://yarnpkg.com/ "Home | Yarn - Package Manager") and [Node.js](https://nodejs.org/en/ "Node.js") to build.
 
 ```console
-$ yarn install
-$ yarn build
+$ pnpm install
+$ pnpm build
 ```
 
 You have to need these environment secrets:
@@ -38,8 +49,8 @@ Follow this link https://turborepo.org/docs/ci/github-actions
 If you neet local cache:
 
 ```console
-$ yarn turbo login
-$ yarn turbo link
+$ pnpm turbo login
+$ pnpm turbo link
 ```
 
 # RFC
