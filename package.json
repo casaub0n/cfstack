@@ -3,8 +3,8 @@
   "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "build": "turbo run prebuild && turbo run build",
-    "w:build": "turbo run prebuild --no-daemon && turbo run build --no-daemon",
+    "build": "dotenv -- turbo run build",
+    "w:build": "dotenv -- turbo run build --no-daemon",
     "test": "turbo run test",
     "w:test": "turbo run test --no-daemon",
     "test:watch": "turbo run test:watch",
@@ -18,9 +18,10 @@
     "w:build:storybook": "turbo run build:storybook --no-daemon"
   },
   "devDependencies": {
-    "turbo": "1.9.3",
+    "dotenv-cli": "^7.2.1",
     "git-cz": "^4.9.0",
-    "prettier": "^2.8.2"
+    "prettier": "^2.8.2",
+    "turbo": "1.9.3"
   },
   "engines": {
     "node": ">=18.15.0"
