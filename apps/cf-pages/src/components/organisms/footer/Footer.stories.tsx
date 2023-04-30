@@ -2,8 +2,15 @@ import { Meta, StoryObj } from "@storybook/react";
 import { Footer } from "./Footer";
 
 const meta: Meta<typeof Footer> = {
-  title: "footer",
+  title: "organisms/footer",
   component: Footer,
+  parameters: {
+    docs: {
+      description: {
+        component: "company info",
+      },
+    },
+  },
 };
 
 export default meta;

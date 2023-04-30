@@ -2,8 +2,15 @@ import { Meta, StoryObj } from "@storybook/react";
 import { Header } from "./Header";
 
 const meta: Meta<typeof Header> = {
-  title: "header",
+  title: "organisms/header",
   component: Header,
+  parameters: {
+    docs: {
+      description: {
+        component: "company name and logo",
+      },
+    },
+  },
 };
 
 export default meta;
