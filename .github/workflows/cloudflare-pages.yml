@@ -52,6 +52,7 @@ jobs:
           CI: true
           TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
           TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+          NEXT_TELEMETRY_DISABLED: 1
 
       - name: lint
         run: pnpm lint
