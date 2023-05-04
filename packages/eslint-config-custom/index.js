@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["next", "turbo", "prettier"],
+  extends: ["next/core-web-vitals", "turbo", "prettier"],
   settings: {
     react: {
       version: "detect",
