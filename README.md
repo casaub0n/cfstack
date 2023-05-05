@@ -7,6 +7,7 @@
 This repository is the ideal monorepo for next.js
 
 I follow these technical stacks:
+
 - Turborepo
 - Prettier
 - ESLint
@@ -21,7 +22,7 @@ I follow these technical stacks:
 
 ## Getting Started
 
-This software neeed [yarn](https://yarnpkg.com/ "Home | Yarn - Package Manager") and [Node.js](https://nodejs.org/en/ "Node.js") to build.
+required pnpm and [Node.js](https://nodejs.org/en/ "Node.js") to build.
 
 ```console
 $ pnpm install
