@@ -3,6 +3,10 @@ const path = require("path");
 module.exports = {
   stories: [
     {
+      directory: "../../../doc/",
+      titlePrefix: "Cf stack root",
+    },
+    {
       directory: "../../cf-pages/src/",
       titlePrefix: "cf-pages",
     },
