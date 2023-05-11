@@ -22,14 +22,14 @@ I follow these technical stacks:
 
 ## Getting Started
 
-required pnpm and [Node.js](https://nodejs.org/en/ "Node.js") to build.
+pnpm and [Node.js](https://nodejs.org/en/ "Node.js") to build.
 
 ```console
 $ pnpm install
 $ pnpm build
 ```
 
-You have to need these environment secrets:
+environment secrets:
 
 - CLOUDFLARE_ACCOUNT_ID
 - CLOUDFLARE_API_TOKEN
@@ -37,17 +37,15 @@ You have to need these environment secrets:
 - TURBO_TOKEN
   in Action sercrets(https://github.com/someone/cfstack/settings/secrets/actions) for your GitHub Actions.
 
-### How to get CLOUDFLARE_ACCOUNT_ID and CLOUDFLARE_API_TOKEN
+### CLOUDFLARE_ACCOUNT_ID and CLOUDFLARE_API_TOKEN
 
-Follow this link https://zenn.dev/nwtgck/articles/1fdee0e84e5808
+https://zenn.dev/nwtgck/articles/1fdee0e84e5808
 
-### How to get TURBO_TEAM and URBO_TOKEN
+### TURBO_TEAM and TURBO_TOKEN
 
-Follow this link https://turborepo.org/docs/ci/github-actions
+https://turborepo.org/docs/ci/github-actions
 
-### How to use local cache to build
-
-If you neet local cache:
+### local cache to build
 
 ```console
 $ pnpm turbo login
