@@ -26,5 +26,7 @@ const rElement = (
 
 export const Default: Story = {
   name: "layout for Next.js",
-  render: () => <>{Layout(rElement)}</>,
+  parameters: {
+    children: rElement,
+  },
 };
