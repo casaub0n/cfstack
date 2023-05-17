@@ -7481,7 +7481,7 @@ packages:
       mri: 1.2.0
       node-fetch-native: 1.1.1
       pathe: 1.1.0
-      tar: 6.1.14
+      tar: 6.1.15
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -11397,8 +11397,8 @@ packages:
       readable-stream: 3.6.2
     dev: true
 
-  /tar@6.1.14:
-    resolution: {integrity: sha512-piERznXu0U7/pW7cdSn7hjqySIVTYT6F76icmFk7ptU7dDYlXTm5r9A6K04R2vU3olYgoKeo1Cg3eeu5nhftAw==}
+  /tar@6.1.15:
+    resolution: {integrity: sha512-/zKt9UyngnxIT/EAGYuxaMYgOIJiP81ab9ZfkILq4oNLPFX50qyYmu7jRj9qeXoxmJHjGlbH0+cm2uy1WCs10A==}
     engines: {node: '>=10'}
     dependencies:
       chownr: 2.0.0
