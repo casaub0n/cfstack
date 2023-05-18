@@ -8,17 +8,53 @@ This repository is the ideal monorepo for next.js
 
 I follow these technical stacks:
 
-- Turborepo
-- Prettier
-- ESLint
-- Jest
-- Storybook
-- GitHub actions
-- Work on Windows
+- [Turborepo](https://turbo.build/repo)
+- [Prettier](https://prettier.io/)
+- [ESLint](https://eslint.org/)
+- [Jest](https://jestjs.io/)
+- [Storybook](https://storybook.js.org/)
+- [GitHub actions](https://github.com/features/actions)
+- [Work on Windows](#Windows)
 
 # documents
 
 [storybook](https://casaub0n.github.io/cfstack/)
+
+## Windows
+
+### Update powershell
+
+[Windows への PowerShell のインストール](https://learn.microsoft.com/ja-jp/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3)
+
+This is by using winget
+
+```console
+$ winget search Microsoft.PowerShell
+$ winget install --id Microsoft.Powershell --source winget
+
+```
+
+### Scoop
+
+Scoop is the best package manager for Windows.
+In this section, installed:
+
+- Scoop
+- Git
+- fnm
+- Node.js
+- pnpm
+
+```console
+$ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser # Optional: Needed to run a remote script the first time
+$ irm get.scoop.sh | iex
+$ scoop bucket add main
+$ scoop install main/git
+$ scoop install main/fnm
+$ fnm install --lts
+$ fnm use v18.16.0
+$ scoop install main/pnpm
+```
 
 ## Getting Started
 
