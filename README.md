@@ -39,11 +39,11 @@ $ winget install --id Microsoft.Powershell --source winget
 Scoop is the best package manager for Windows.
 In this section, installed:
 
-- Scoop
-- Git
-- fnm
-- Node.js
-- pnpm
+- [Scoop](https://scoop.sh/)
+- [Git](https://gitforwindows.org/)
+- [fnm](https://github.com/Schniz/fnm)
+- [Node.js](https://nodejs.org/)
+- [pnpm](https://pnpm.io/)
 
 ```console
 $ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser # Optional: Needed to run a remote script the first time
@@ -58,9 +58,9 @@ $ scoop install main/pnpm
 
 ## Getting Started
 
-pnpm and [Node.js](https://nodejs.org/en/ "Node.js") to build.
-
 ```console
+$ git clone git@github.com:casaub0n/cfstack.git
+$ cd cfstack
 $ pnpm install
 $ pnpm build
 ```
@@ -88,38 +88,4 @@ $ pnpm turbo login
 $ pnpm turbo link
 ```
 
-# RFC
-
-new site generator
-
-- Deno
-- Fresh
-
-## edit diagram
-
-```mermaid
-sequenceDiagram
-    autonumber
-    actor User
-    participant cfa as Cloudflare Access
-    participant cp as Cloudflare pages
-    participant d3
-    User->>cfa: Google workplace auth
-    cfa->>cp: OK
-    cp->>User: View edit page
-    User->>cp: send data
-    cp->>cp: build static page
-    cp->>d3: save data
-```
-
-## build process on GitHub
-
-```mermaid
-sequenceDiagram
-    autonumber
-    participant gha as Github actions
-    participant d3
-    participant cp as Cloudflare pages
-    d3->>gha: get data
-    gha->>cp: deploy static site
-```
+[RFC](docs/rfc.md)

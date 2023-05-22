@@ -4,7 +4,7 @@ const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 module.exports = {
   stories: [
     {
-      directory: "../../../doc/",
+      directory: "../../../docs/",
       titlePrefix: "Cf stack root",
     },
     {
