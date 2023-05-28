@@ -7,22 +7,22 @@
     "build:storybook": "storybook build"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.21.4",
-    "@babel/preset-react": "^7.18.6",
-    "@babel/preset-typescript": "^7.21.4",
-    "@storybook/addon-docs": "^7.0.2",
-    "@storybook/addon-essentials": "7.0.10",
-    "@storybook/addon-interactions": "7.0.10",
-    "@storybook/addon-links": "7.0.10",
-    "@storybook/blocks": "^7.0.8",
-    "@storybook/react": "7.0.10",
-    "@storybook/react-webpack5": "7.0.10",
+    "@babel/preset-env": "^7.22.2",
+    "@babel/preset-react": "^7.22.0",
+    "@babel/preset-typescript": "^7.21.5",
+    "@storybook/addon-docs": "^7.0.18",
+    "@storybook/addon-essentials": "7.0.18",
+    "@storybook/addon-interactions": "7.0.18",
+    "@storybook/addon-links": "7.0.18",
+    "@storybook/blocks": "^7.0.18",
+    "@storybook/react": "7.0.18",
+    "@storybook/react-webpack5": "7.0.18",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "storybook": "7.0.10",
+    "storybook": "7.0.18",
     "tsconfig-paths-webpack-plugin": "^4.0.1"
   },
   "dependencies": {
-    "@storybook/nextjs": "^7.0.1"
+    "@storybook/nextjs": "^7.0.18"
   }
 }
