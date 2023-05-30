@@ -1,7 +1,9 @@
 module.exports = {
   root: true,
-  extends: ["custom"],
-  rules: {
-    "@next/next/no-html-link-for-pages": ["error", "packages/my-app/pages/"],
+  extends: ["next/core-web-vitals"],
+  parserOptions: {
+    babelOptions: {
+      presets: [require.resolve("next/babel")],
+    },
   },
 };
