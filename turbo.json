@@ -6,7 +6,7 @@
     },
     "build": {
       "dependsOn": ["^build"],
-      "outputs": ["out/**"]
+      "outputs": ["out/**", "storybook-static/**"]
     },
     "test": {
       "dependsOn": ["^test"],
@@ -23,10 +23,6 @@
     },
     "storybook": {
       "cache": false
-    },
-    "build:storybook": {
-      "dependsOn": ["^build:storybook"],
-      "outputs": ["storybook-static/**"]
     },
     "deploy": {
       "dependsOn": ["build", "test", "lint"],

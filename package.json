@@ -4,18 +4,11 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "build": "dotenv -- turbo run build",
-    "w:build": "dotenv -- turbo run build --no-daemon",
     "test": "turbo run test",
-    "w:test": "turbo run test --no-daemon",
     "test:watch": "turbo run test:watch",
     "lint": "turbo run lint",
-    "w:lint": "turbo run lint --no-daemon",
     "dev": "turbo run dev",
-    "w:dev": "turbo run dev --no-daemon",
-    "storybook": "turbo run storybook",
-    "w:storybook": "turbo run storybook --no-daemon",
-    "build:storybook": "turbo run build:storybook",
-    "w:build:storybook": "turbo run build:storybook --no-daemon"
+    "storybook": "turbo run storybook"
   },
   "devDependencies": {
     "dotenv-cli": "^7.2.1",
