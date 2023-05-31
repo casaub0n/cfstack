@@ -20,13 +20,18 @@ I follow these technical stacks:
 
 [storybook](https://casaub0n.github.io/cfstack/)
 
+## dev
+```console
+$ pnmp storybook
+```
+
 ## Windows
 
 ### Update powershell
 
 [Windows への PowerShell のインストール](https://learn.microsoft.com/ja-jp/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3)
 
-This is by using winget
+This is by using [winget](https://learn.microsoft.com/ja-jp/windows/package-manager/winget/)
 
 ```console
 $ winget search Microsoft.PowerShell
