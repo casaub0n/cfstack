@@ -6789,7 +6789,7 @@ packages:
     hasBin: true
     dependencies:
       cross-spawn: 7.0.3
-      dotenv: 16.1.0
+      dotenv: 16.1.1
       dotenv-expand: 10.0.0
       minimist: 1.2.8
     dev: true
@@ -6798,8 +6798,8 @@ packages:
     resolution: {integrity: sha512-GopVGCpVS1UKH75VKHGuQFqS1Gusej0z4FyQkPdwjil2gNIv+LNsqBlboOzpJFZKVT95GkCyWJbBSdFEFUWI2A==}
     engines: {node: '>=12'}
 
-  /dotenv@16.1.0:
-    resolution: {integrity: sha512-XiwP/4cqatBNLEnKe169vPZCrovUmYngyVA4DgZ3uIVLJfZaBgr4uT0EF2TrEQqgWDDlekGo0muEYme5SR78Ww==}
+  /dotenv@16.1.1:
+    resolution: {integrity: sha512-UGmzIqXU/4b6Vb3R1Vrfd/4vGgVlB+mO+vEixOdfRhLeppkyW2BMhuK7TL8d0el+q9c4lW9qK2wZYhNLFhXYLA==}
     engines: {node: '>=12'}
 
   /duplexer3@0.1.5:
@@ -9603,7 +9603,7 @@ packages:
     engines: {node: '>=14.0.0'}
     dependencies:
       app-root-dir: 1.0.2
-      dotenv: 16.1.0
+      dotenv: 16.1.1
       dotenv-expand: 10.0.0
 
   /leven@3.1.0:
