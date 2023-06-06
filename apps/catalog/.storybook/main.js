@@ -1,7 +1,10 @@
 const path = require("path");
 const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 
-module.exports = {
+// https://github.com/storybookjs/storybook/tree/next/code/frameworks/nextjs
+
+/** @type { import('@storybook/nextjs').StorybookConfig } */
+const config = {
   stories: [
     {
       directory: "../../../docs/",
@@ -18,18 +21,12 @@ module.exports = {
     "@storybook/addon-interactions",
     "@storybook/addon-docs",
   ],
-  framework: "@storybook/react-webpack5",
+  framework: "@storybook/nextjs",
   core: {
     disableTelemetry: true,
   },
   docs: {
-    autodocs: true,
-  },
-  features: {
-    babelModeV7: true,
-  },
-  babel: (config) => {
-    return { ...config, rootMode: "upward" };
+    autodocs: "tag",
   },
   webpackFinal: async (config) => {
     config.resolve.plugins = config.resolve.plugins || [];
@@ -41,3 +38,5 @@ module.exports = {
     return config;
   },
 };
+
+export default config;

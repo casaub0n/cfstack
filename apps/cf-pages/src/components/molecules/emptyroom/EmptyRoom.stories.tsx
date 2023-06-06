@@ -1,7 +1,7 @@
-import { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react";
 import { EmptyRoom } from "./EmptyRoom";
 
-const meta: Meta<typeof EmptyRoom> = {
+const meta = {
   title: "molecules/empty room",
   component: EmptyRoom,
   parameters: {
@@ -11,11 +11,11 @@ const meta: Meta<typeof EmptyRoom> = {
       },
     },
   },
-};
+} satisfies Meta<typeof EmptyRoom>;
 
 export default meta;
 
-type Story = StoryObj<typeof EmptyRoom>;
+type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   name: "Default empty room",

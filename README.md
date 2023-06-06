@@ -21,9 +21,12 @@ I follow these technical stacks:
 [storybook](https://casaub0n.github.io/cfstack/)
 
 ## dev
+
 ```console
-$ pnmp storybook
+$ pnpm storybook
 ```
+
+[storybook readme](./apps/catalog/README.md)
 
 ## Windows
 

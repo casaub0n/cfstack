@@ -1,7 +1,7 @@
-import { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react";
 import { Layout } from "./Layout";
 
-const meta: Meta<typeof Layout> = {
+const meta = {
   title: "layout/layout",
   component: Layout,
   parameters: {
@@ -11,10 +11,13 @@ const meta: Meta<typeof Layout> = {
       },
     },
   },
-};
+} satisfies Meta<typeof Layout>;
 
 export default meta;
 
+/**
+ * TODO: fix typeof meta, but no idea of args properties
+ */
 type Story = StoryObj<typeof Layout>;
 
 const rElement = (
