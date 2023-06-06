@@ -1,7 +1,7 @@
-import { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react";
 import { ArticleSection } from "./ArticleSection";
 
-const meta: Meta<typeof ArticleSection> = {
+const meta = {
   title: "atoms/Article Section",
   component: ArticleSection,
   parameters: {
@@ -11,11 +11,11 @@ const meta: Meta<typeof ArticleSection> = {
       },
     },
   },
-};
+} satisfies Meta<typeof ArticleSection>;
 
 export default meta;
 
-type Story = StoryObj<typeof ArticleSection>;
+type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
