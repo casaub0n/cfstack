@@ -1,10 +1,13 @@
-import { ContentText } from "@/components/atoms/ContentText";
-import { ArticleSection } from "@/components/atoms/ArticleSection";
-import { cloudinaryLoader } from "@/utils/cloudinaryLoader";
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
+
+import { ArticleSection } from "@/components/atoms/ArticleSection";
+import { ContentText } from "@/components/atoms/ContentText";
+import { cloudinaryLoader } from "@/utils/cloudinaryLoader";
+
 import styles from "./styles.module.css";
+
 import type { FC } from "react";
 
 type Props = {
