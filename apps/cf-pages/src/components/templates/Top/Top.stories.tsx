@@ -1,5 +1,6 @@
-import type { Meta, StoryObj } from "@storybook/react";
 import { Top } from "./Top";
+
+import type { Meta, StoryObj } from "@storybook/react";
 
 const meta = {
   title: "templates/Top",
