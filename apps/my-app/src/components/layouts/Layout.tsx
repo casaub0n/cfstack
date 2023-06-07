@@ -1,8 +1,13 @@
-import { Header } from "@/components/organisms/header";
 import { Footer } from "@/components/organisms/footer";
-import type { ReactNode, FC } from "react";
-import styles from "./styles.module.css";
+import { Header } from "@/components/organisms/header";
+
 import { pageTitle } from "../meta";
+
+import styles from "./styles.module.css";
+
+import type { ReactNode, FC } from "react";
+
+
 
 type Layout = {
   children: ReactNode;

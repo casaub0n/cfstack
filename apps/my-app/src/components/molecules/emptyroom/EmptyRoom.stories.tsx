@@ -1,4 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
+
 import { EmptyRoom } from "./EmptyRoom";
 
 const meta: Meta<typeof EmptyRoom> = {

@@ -1,4 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
+
 import { Main } from "./Main";
 
 const meta: Meta<typeof Main> = {
