@@ -1,7 +1,8 @@
+import clsx from "clsx";
 import Link from "next/link";
 import { memo } from "react";
+
 import styles from "./styles.module.css";
-import clsx from "clsx";
 
 export const Header = memo(function BasicHeaderBase() {
   return (

@@ -5,5 +5,6 @@ module.exports = {
     babelOptions: {
       presets: [require.resolve("next/babel")],
     },
+    warnOnUnsupportedTypeScriptVersion: false,
   },
 };

@@ -1,5 +1,6 @@
-import type { Meta, StoryObj } from "@storybook/react";
 import { Main } from "./Main";
+
+import type { Meta, StoryObj } from "@storybook/react";
 
 const meta = {
   title: "molecules/main",
