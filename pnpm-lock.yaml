@@ -15,7 +15,7 @@ importers:
         specifier: ^8.42.0
         version: 8.42.0
       eslint-config-custom:
-        specifier: workspace:*
+        specifier: '*'
         version: link:packages/eslint-config-custom
       git-cz:
         specifier: ^4.9.0
