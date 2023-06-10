@@ -94,8 +94,8 @@ importers:
         specifier: ^29.5.1
         version: 29.5.1
       '@types/node':
-        specifier: 18.16.16
-        version: 18.16.16
+        specifier: 18.16.17
+        version: 18.16.17
       '@types/react':
         specifier: 18.2.9
         version: 18.2.9
@@ -110,7 +110,7 @@ importers:
         version: link:../../packages/eslint-config-custom
       jest:
         specifier: ^29.3.1
-        version: 29.5.0(@types/node@18.16.16)
+        version: 29.5.0(@types/node@18.16.17)
       jest-environment-jsdom:
         specifier: ^29.3.1
         version: 29.5.0
@@ -216,7 +216,7 @@ importers:
         version: 8.3.0(eslint@8.42.0)
       eslint-config-turbo:
         specifier: latest
-        version: 1.10.2(eslint@8.42.0)
+        version: 1.10.3(eslint@8.42.0)
       eslint-plugin-import:
         specifier: ^2.27.5
         version: 2.27.5(@typescript-eslint/parser@5.59.9)(eslint-import-resolver-typescript@3.5.5)(eslint@8.42.0)
@@ -5232,8 +5232,8 @@ packages:
     resolution: {integrity: sha512-VmVm7gXwhkUimRfBwVI1CHhwp86jDWR04B5FGebMMyxV90SlCmFujwUHrxTD4oO+SOYU86SoxvhgeRQJY7iXFg==}
     dev: true
 
-  /@types/node@18.16.16:
-    resolution: {integrity: sha512-NpaM49IGQQAUlBhHMF82QH80J08os4ZmyF9MkpCzWAGuOHqE4gTEbhzd7L3l5LmWuZ6E0OiC1FweQ4tsiW35+g==}
+  /@types/node@18.16.17:
+    resolution: {integrity: sha512-QAkjjRA1N7gPJeAP4WLXZtYv6+eMXFNviqktCDt4GLcmCugMr5BcRHfkOjCQzvCsnMp+L79a54zBkbw356xv9Q==}
     dev: true
 
   /@types/node@20.2.5:
@@ -7692,13 +7692,13 @@ packages:
       eslint: 8.42.0
     dev: false
 
-  /eslint-config-turbo@1.10.2(eslint@8.42.0):
-    resolution: {integrity: sha512-BaCnpn2GM0rTFLuTVplqY8n+3ttWcu/vEmfjJ2BNBVmwX6ALZoJQfL26ZW6VucRk0psTUJALeo+aPrf3VKEJXA==}
+  /eslint-config-turbo@1.10.3(eslint@8.42.0):
+    resolution: {integrity: sha512-ggzPfTJfMsMS383oZ4zfTP1zQvyMyiigOQJRUnLt1nqII6SKkTzdKZdwmXRDHU24KFwUfEFtT6c8vnm2VhL0uQ==}
     peerDependencies:
       eslint: '>6.6.0'
     dependencies:
       eslint: 8.42.0
-      eslint-plugin-turbo: 1.10.2(eslint@8.42.0)
+      eslint-plugin-turbo: 1.10.3(eslint@8.42.0)
     dev: false
 
   /eslint-import-resolver-node@0.3.7:
@@ -7885,8 +7885,8 @@ packages:
       - typescript
     dev: false
 
-  /eslint-plugin-turbo@1.10.2(eslint@8.42.0):
-    resolution: {integrity: sha512-Kxsy4zlKLrGkEqZgcAQtu16YqU/g0mV1vYa9/VweF+MSnWWQsEzsJ1qlzTfXV6N9VqGmkuLiyWOA84sRUklOOg==}
+  /eslint-plugin-turbo@1.10.3(eslint@8.42.0):
+    resolution: {integrity: sha512-g3Mnnk7el1FqxHfqbE/MayLvCsYjA/vKmAnUj66kV4AlM7p/EZqdt42NMcMSKtDVEm0w+utQkkzWG2Xsa0Pd/g==}
     peerDependencies:
       eslint: '>6.6.0'
     dependencies:
@@ -9553,7 +9553,7 @@ packages:
       - supports-color
     dev: true
 
-  /jest-cli@29.5.0(@types/node@18.16.16):
+  /jest-cli@29.5.0(@types/node@18.16.17):
     resolution: {integrity: sha512-L1KcP1l4HtfwdxXNFCL5bmUbLQiKrakMUriBEcc1Vfz6gx31ORKdreuWvmQVBit+1ss9NNR3yxjwfwzZNdQXJw==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     hasBin: true
@@ -9570,7 +9570,7 @@ packages:
       exit: 0.1.2
       graceful-fs: 4.2.11
       import-local: 3.1.0
-      jest-config: 29.5.0(@types/node@18.16.16)
+      jest-config: 29.5.0(@types/node@18.16.17)
       jest-util: 29.5.0
       jest-validate: 29.5.0
       prompts: 2.4.2
@@ -9609,7 +9609,7 @@ packages:
       - ts-node
     dev: true
 
-  /jest-config@29.5.0(@types/node@18.16.16):
+  /jest-config@29.5.0(@types/node@18.16.17):
     resolution: {integrity: sha512-kvDUKBnNJPNBmFFOhDbm59iu1Fii1Q6SxyhXfvylq3UTHbg6o7j/g8k2dZyXWLvfdKB1vAPxNZnMgtKJcmu3kA==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     peerDependencies:
@@ -9624,7 +9624,7 @@ packages:
       '@babel/core': 7.22.1
       '@jest/test-sequencer': 29.5.0
       '@jest/types': 29.5.0
-      '@types/node': 18.16.16
+      '@types/node': 18.16.17
       babel-jest: 29.5.0(@babel/core@7.22.1)
       chalk: 4.1.2
       ci-info: 3.8.0
@@ -10020,7 +10020,7 @@ packages:
       supports-color: 8.1.1
     dev: true
 
-  /jest@29.5.0(@types/node@18.16.16):
+  /jest@29.5.0(@types/node@18.16.17):
     resolution: {integrity: sha512-juMg3he2uru1QoXX078zTa7pO85QyB9xajZc6bU+d9yEGwrKX6+vGmJQ3UdVZsvTEUARIdObzH68QItim6OSSQ==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     hasBin: true
@@ -10033,7 +10033,7 @@ packages:
       '@jest/core': 29.5.0
       '@jest/types': 29.5.0
       import-local: 3.1.0
-      jest-cli: 29.5.0(@types/node@18.16.16)
+      jest-cli: 29.5.0(@types/node@18.16.17)
     transitivePeerDependencies:
       - '@types/node'
       - supports-color
