@@ -1,8 +1,8 @@
-import { Meta, StoryObj } from "@storybook/react";
-
 import { Top } from "./Top";
 
-const meta: Meta<typeof Top> = {
+import type { Meta, StoryObj } from "@storybook/react";
+
+const meta = {
   title: "templates/Top",
   component: Top,
   parameters: {
@@ -12,11 +12,11 @@ const meta: Meta<typeof Top> = {
       },
     },
   },
-};
+} satisfies Meta<typeof Top>;
 
 export default meta;
 
-type Story = StoryObj<typeof Top>;
+type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   name: "Default Top",

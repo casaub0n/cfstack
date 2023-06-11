@@ -1,8 +1,8 @@
-import { Meta, StoryObj } from "@storybook/react";
-
 import { Footer } from "./Footer";
 
-const meta: Meta<typeof Footer> = {
+import type { Meta, StoryObj } from "@storybook/react";
+
+const meta = {
   title: "organisms/footer",
   component: Footer,
   parameters: {
@@ -12,11 +12,11 @@ const meta: Meta<typeof Footer> = {
       },
     },
   },
-};
+} satisfies Meta<typeof Footer>;
 
 export default meta;
 
-type Story = StoryObj<typeof Footer>;
+type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   name: "Default footer",
