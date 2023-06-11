@@ -1,8 +1,8 @@
-import { Meta, StoryObj } from "@storybook/react";
-
 import { Main } from "./Main";
 
-const meta: Meta<typeof Main> = {
+import type { Meta, StoryObj } from "@storybook/react";
+
+const meta = {
   title: "molecules/main",
   component: Main,
   parameters: {
@@ -12,11 +12,11 @@ const meta: Meta<typeof Main> = {
       },
     },
   },
-};
+} satisfies Meta<typeof Main>;
 
 export default meta;
 
-type Story = StoryObj<typeof Main>;
+type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   name: "Default Main",

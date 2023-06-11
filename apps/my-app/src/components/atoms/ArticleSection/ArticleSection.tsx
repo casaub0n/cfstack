@@ -1,8 +1,7 @@
 import clsx from "clsx";
+import { ComponentPropsWithoutRef, FC } from "react";
 
 import styles from "./styles.module.css";
-
-import type { ComponentPropsWithoutRef, FC } from "react";
 
 type Props = ComponentPropsWithoutRef<"section">;
 
