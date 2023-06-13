@@ -1,9 +1,8 @@
 import Head from "next/head";
 
-import styles from "./styles.module.css";
-
 import { pageTitle } from "@/components/meta";
 import { Main } from "@/components/molecules/main";
+import styles from "@/components/templates/Top/styles.module.css";
 
 export const Top = () => {
   return (

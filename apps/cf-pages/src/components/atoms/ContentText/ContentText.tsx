@@ -1,6 +1,7 @@
-import clsx from "clsx";
 import { ComponentPropsWithoutRef } from "react";
 import React from "react";
+
+import clsx from "clsx";
 
 import styles from "./styles.module.css";
 
