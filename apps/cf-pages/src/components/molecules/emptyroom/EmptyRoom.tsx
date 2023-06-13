@@ -1,9 +1,8 @@
-import React from "react";
+import type { FC } from "react";
 
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
-
 
 import { ArticleSection } from "@/components/atoms/ArticleSection";
 import { ContentText } from "@/components/atoms/ContentText";
@@ -16,7 +15,7 @@ type Props = {
   className?: string;
 };
 
-export const EmptyRoom: React.FC<Props> = ({ className }) => {
+export const EmptyRoom: FC<Props> = ({ className }) => {
   return (
     <ArticleSection>
       <h2>板橋駅前桜ビル401号室&nbsp;内見受付中</h2>
