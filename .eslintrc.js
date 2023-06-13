@@ -10,7 +10,7 @@ const eslintConfig = {
   extends: ["custom"],
   settings: {
     next: {
-      rootDir: ["apps/cf-pages/*"],
+      rootDir: ["apps/cf-pages/*", "apps/my-app/*"],
     },
   },
 };

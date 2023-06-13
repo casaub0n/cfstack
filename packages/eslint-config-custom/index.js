@@ -18,7 +18,12 @@ module.exports = {
           },
           {
             pattern: "@/components/**",
-            group: "parent",
+            group: "internal",
+            position: "before",
+          },
+          {
+            pattern: "@/utils/**",
+            group: "internal",
             position: "before",
           },
         ],
