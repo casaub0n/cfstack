@@ -5,16 +5,22 @@ on: [push]
 jobs:
   # Build job
   Run-PSScriptAnalyzer-on-Windows:
-    name: Run PSScriptAnalyzer on Windows
+    name: Make dev environment on Windows
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Install PSScriptAnalyzer module
+      - name: Install Scoop
         shell: pwsh
         run: |
-          Set-PSRepository PSGallery -InstallationPolicy Trusted
-          Install-Module PSScriptAnalyzer -ErrorAction Stop
-      - name: Get list of rules
+          Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+          irm get.scoop.sh | iex
+      - name: Install Git, fnm, Node.js and pnpm
         shell: pwsh
         run: |
-          Get-ScriptAnalyzerRule
+          scoop bucket add main
+          scoop install main/git
+          scoop install main/fnm
+          fnm install --lts
+          fnm use v18.16.0
+          scoop install main/pnpm
+          scoop list
