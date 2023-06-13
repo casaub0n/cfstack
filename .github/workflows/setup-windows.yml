@@ -12,7 +12,7 @@ jobs:
       - name: Install Scoop
         shell: pwsh
         run: |
-          Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+          Set-ExecutionPolicy RemoteSigned
           irm get.scoop.sh | iex
       - name: Install Git, fnm, Node.js and pnpm
         shell: pwsh
