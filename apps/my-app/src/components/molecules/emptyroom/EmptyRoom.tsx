@@ -1,14 +1,15 @@
+import type { FC } from "react";
+
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
 
-import styles from "./styles.module.css";
 
-import type { FC } from "react";
+import { cloudinaryLoader } from "@/utils/cloudinaryLoader";
 
 import { ArticleSection } from "@/components/atoms/ArticleSection";
 import { ContentText } from "@/components/atoms/ContentText";
-import { cloudinaryLoader } from "@/utils/cloudinaryLoader";
+import styles from "@/components/molecules/emptyroom/styles.module.css";
 
 type Props = {
   className?: string;

@@ -1,9 +1,7 @@
-import { pageTitle } from "../meta";
-
-import styles from "./styles.module.css";
-
 import type { ReactNode, FC } from "react";
 
+import styles from "@/components/layouts/styles.module.css";
+import { pageTitle } from "@/components/meta";
 import { Footer } from "@/components/organisms/footer";
 import { Header } from "@/components/organisms/header";
 

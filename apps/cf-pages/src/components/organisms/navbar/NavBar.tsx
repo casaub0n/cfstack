@@ -1,6 +1,7 @@
+import { memo } from "react";
+
 import clsx from "clsx";
 import Link from "next/link";
-import { memo } from "react";
 
 import styles from "./styles.module.css";
 
