@@ -1,10 +1,8 @@
-import { ComponentPropsWithoutRef } from "react";
-import type { FC } from "react";
+import type { FC, ComponentPropsWithoutRef } from "react";
 
 import clsx from "clsx";
 
 import styles from "./styles.module.css";
-
 
 type Props = ComponentPropsWithoutRef<"p">;
 

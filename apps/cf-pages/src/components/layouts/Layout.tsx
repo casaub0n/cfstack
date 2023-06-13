@@ -1,4 +1,4 @@
-import { ReactElement } from "react";
+import type { ReactElement } from "react";
 
 import { Footer } from "@/components/organisms/footer";
 import { Header } from "@/components/organisms/header";

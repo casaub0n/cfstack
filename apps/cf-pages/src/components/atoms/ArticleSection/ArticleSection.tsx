@@ -1,4 +1,4 @@
-import { ComponentPropsWithoutRef, FC } from "react";
+import type { ComponentPropsWithoutRef, FC } from "react";
 
 import clsx from "clsx";
 

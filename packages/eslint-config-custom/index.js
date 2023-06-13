@@ -1,11 +1,12 @@
 module.exports = {
   // https://github.com/storybookjs/eslint-plugin-storybook
   extends: ["next/core-web-vitals", "turbo", "prettier", "plugin:storybook/recommended"],
-  plugins: ["import", "unused-imports"],
+  plugins: ["@typescript-eslint", "import", "unused-imports"],
   rules: {
     "@next/next/no-html-link-for-pages": "off",
     "@typescript-eslint/no-unused-vars": "off",
     "unused-imports/no-unused-imports": "warn",
+    "@typescript-eslint/consistent-type-imports": ["warn", { prefer: "type-imports" }],
     "import/order": [
       "warn",
       {
