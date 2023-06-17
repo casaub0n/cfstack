@@ -1,4 +1,4 @@
-import { ImageLoader, ImageLoaderProps } from "next/image"
+import type { ImageLoader, ImageLoaderProps } from "next/image"
 
 type CloudinaryLoaderProps = (imageNum: string) => ImageLoader;
 

@@ -1,12 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base"
-  ],
+  "extends": ["config:base"],
   "lockFileMaintenance": {
     "enabled": true,
-    "schedule": [
-      "before 5pm on wednesday"
-    ]
-  }
+    "schedule": ["before 5pm on wednesday"]
+  },
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
+  ]
 }
