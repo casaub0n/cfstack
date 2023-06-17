@@ -1,4 +1,4 @@
-module.exports = {
+const eslintConfig = {
   // https://github.com/storybookjs/eslint-plugin-storybook
   extends: ["next/core-web-vitals", "turbo", "prettier", "plugin:storybook/recommended"],
   plugins: ["@typescript-eslint", "import", "unused-imports"],
@@ -49,3 +49,5 @@ module.exports = {
     warnOnUnsupportedTypeScriptVersion: false,
   },
 };
+
+module.exports = eslintConfig;
