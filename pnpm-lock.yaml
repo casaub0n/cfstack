@@ -86,7 +86,7 @@ importers:
         version: 7.0.25(react-dom@18.2.0)(react@18.2.0)(typescript@5.1.6)
       '@storybook/testing-react':
         specifier: ^2.0.1
-        version: 2.0.1(@storybook/client-logger@7.0.24)(@storybook/preview-api@7.0.24)(@storybook/react@7.0.25)(@storybook/types@7.0.24)(react@18.2.0)
+        version: 2.0.1(@storybook/client-logger@7.0.25)(@storybook/preview-api@7.0.25)(@storybook/react@7.0.25)(@storybook/types@7.0.25)(react@18.2.0)
       '@testing-library/jest-dom':
         specifier: ^5.16.5
         version: 5.16.5
@@ -151,15 +151,15 @@ importers:
         specifier: 1.2.1
         version: 1.2.1
       next:
-        specifier: 13.4.7
-        version: 13.4.7(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)
+        specifier: 13.4.8
+        version: 13.4.8(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)
     devDependencies:
       '@storybook/react':
         specifier: 7.0.25
         version: 7.0.25(react-dom@18.2.0)(react@18.2.0)(typescript@5.1.6)
       '@storybook/testing-react':
         specifier: ^2.0.1
-        version: 2.0.1(@storybook/client-logger@7.0.24)(@storybook/preview-api@7.0.24)(@storybook/react@7.0.25)(@storybook/types@7.0.24)(react@18.2.0)
+        version: 2.0.1(@storybook/client-logger@7.0.25)(@storybook/preview-api@7.0.25)(@storybook/react@7.0.25)(@storybook/types@7.0.25)(react@18.2.0)
       '@testing-library/jest-dom':
         specifier: ^5.16.5
         version: 5.16.5
@@ -240,7 +240,7 @@ importers:
         version: 2.0.0(@typescript-eslint/eslint-plugin@5.59.11)(eslint@8.42.0)
       next:
         specifier: ^13.4.4
-        version: 13.4.7(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)
+        version: 13.4.7(react-dom@18.2.0)(react@18.2.0)
 
   packages/tsconfig: {}
 
@@ -4145,17 +4145,6 @@ packages:
       telejson: 7.1.0
     dev: true
 
-  /@storybook/channel-postmessage@7.0.24:
-    resolution: {integrity: sha512-QLtLXjEeTEwBN/7pB888mBaykmRU9Jy2BitvZuLJWyHHygTYm3vYZOaGR37DT+q/6Ob5GaZ0tURZmCSNDe8IIA==}
-    dependencies:
-      '@storybook/channels': 7.0.24
-      '@storybook/client-logger': 7.0.24
-      '@storybook/core-events': 7.0.24
-      '@storybook/global': 5.0.0
-      qs: 6.11.2
-      telejson: 7.1.0
-    dev: true
-
   /@storybook/channel-postmessage@7.0.25:
     resolution: {integrity: sha512-h4AHsgaGNcTJD8gzHAOAA6L9oxg4fVOw0LVO1L6Jd0CJ0jDV1jc3UPqh+i3bkTOB/4xjaT5xSr1h+eCUAA+N+w==}
     dependencies:
@@ -4178,10 +4167,6 @@ packages:
 
   /@storybook/channels@7.0.18:
     resolution: {integrity: sha512-rkA7ea0M3+dWS+71iHJdiZ5R2QuIdiVg0CgyLJHDagc1qej7pEVNhMWtppeq+X5Pwp9nkz8ZTQ7aCjTf6th0/A==}
-    dev: true
-
-  /@storybook/channels@7.0.24:
-    resolution: {integrity: sha512-NZVLwMhtzy6cZrNRjshFvMAD9mQTmJDNwhohodSkM/YFCDVFhmxQk9tgizVGh9MwY3CYGJ1SI96RUejGosb49Q==}
     dev: true
 
   /@storybook/channels@7.0.25:
@@ -4246,12 +4231,6 @@ packages:
 
   /@storybook/client-logger@7.0.18:
     resolution: {integrity: sha512-uKgFdVedYoRDZBVrE1IBdWNHDFln1IxWEeI+7ZiNSQwREG9swHpU5Fa8DceclM/oLjJRuzG1jFzv+XZY8894+Q==}
-    dependencies:
-      '@storybook/global': 5.0.0
-    dev: true
-
-  /@storybook/client-logger@7.0.24:
-    resolution: {integrity: sha512-4zRTb+QQ1hWaRqad/UufZNRfi2d/cf5a40My72Ct97VwjhJFE6aQ3K+hl1Xt6hh8dncDL2JK3cgziw6ElqjT0w==}
     dependencies:
       '@storybook/global': 5.0.0
     dev: true
@@ -4389,10 +4368,6 @@ packages:
 
   /@storybook/core-events@7.0.18:
     resolution: {integrity: sha512-7gxHBQDezdKOeq/u1LL80Bwjfcwsv7XOS3yWQElcgqp+gLaYB6OwwgtkCB2yV6a6l4nep9IdPWE8G3TxIzn9xw==}
-    dev: true
-
-  /@storybook/core-events@7.0.24:
-    resolution: {integrity: sha512-xkf/rihCkhqMeh5EA8lVp90/mzbb2gcg6I3oeFWw2hognVcTnPXg6llhWdU4Spqd0cals7GEFmQugIILCmH8GA==}
     dev: true
 
   /@storybook/core-events@7.0.25:
@@ -4809,26 +4784,6 @@ packages:
       util-deprecate: 1.0.2
     dev: true
 
-  /@storybook/preview-api@7.0.24:
-    resolution: {integrity: sha512-psycU07tuB5nyJvfAJiDN/9e8cjOdJ+5lrCSYC3vPzH86LxADDIN0/8xFb1CaQWcXZsADEFJGpHKWbRhjym5ew==}
-    dependencies:
-      '@storybook/channel-postmessage': 7.0.24
-      '@storybook/channels': 7.0.24
-      '@storybook/client-logger': 7.0.24
-      '@storybook/core-events': 7.0.24
-      '@storybook/csf': 0.1.1
-      '@storybook/global': 5.0.0
-      '@storybook/types': 7.0.24
-      '@types/qs': 6.9.7
-      dequal: 2.0.3
-      lodash: 4.17.21
-      memoizerific: 1.11.3
-      qs: 6.11.2
-      synchronous-promise: 2.0.17
-      ts-dedent: 2.2.0
-      util-deprecate: 1.0.2
-    dev: true
-
   /@storybook/preview-api@7.0.25:
     resolution: {integrity: sha512-/KiCKMOFGSc9LaQxuNDEeWqqn/GRROCWeg4wyhm4bsxhd/DsQfTmLaB/rW0+GZpMMZoOfSITkSYETNCPzNhO9g==}
     dependencies:
@@ -5021,7 +4976,7 @@ packages:
       - supports-color
     dev: true
 
-  /@storybook/testing-react@2.0.1(@storybook/client-logger@7.0.24)(@storybook/preview-api@7.0.24)(@storybook/react@7.0.25)(@storybook/types@7.0.24)(react@18.2.0):
+  /@storybook/testing-react@2.0.1(@storybook/client-logger@7.0.25)(@storybook/preview-api@7.0.25)(@storybook/react@7.0.25)(@storybook/types@7.0.25)(react@18.2.0):
     resolution: {integrity: sha512-D0fT7f0TUU8+usR+0NSyCYQCYDWernQqGZou32ISsoBkY9IiH1JMY4hQE8zUaGozu9eMlaa2wieWIMsjWovpdw==}
     engines: {node: '>=10'}
     deprecated: In Storybook 7, this package has been promoted to a first-class Storybook functionality. This means that you no longer need it! Instead, you can import the same utilities, but from the @storybook/react package. Please migrate when you can.
@@ -5032,11 +4987,11 @@ packages:
       '@storybook/types': ^7.0.0-beta.0 || ^7.0.0-rc.0 || ^7.0.0
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@storybook/client-logger': 7.0.24
+      '@storybook/client-logger': 7.0.25
       '@storybook/csf': 0.1.1
-      '@storybook/preview-api': 7.0.24
+      '@storybook/preview-api': 7.0.25
       '@storybook/react': 7.0.25(react-dom@18.2.0)(react@18.2.0)(typescript@5.1.6)
-      '@storybook/types': 7.0.24
+      '@storybook/types': 7.0.25
       react: 18.2.0
     dev: true
 
@@ -5075,15 +5030,6 @@ packages:
       '@types/babel__core': 7.20.1
       '@types/express': 4.17.17
       file-system-cache: 2.4.1
-    dev: true
-
-  /@storybook/types@7.0.24:
-    resolution: {integrity: sha512-SZh/XBHP1TT5bmEk0W52nT0v6fUnYwmZVls3da5noutdgOAiwL7TANtl41XrNjG+UDr8x0OE3PVVJi+LhwUaNA==}
-    dependencies:
-      '@storybook/channels': 7.0.24
-      '@types/babel__core': 7.20.1
-      '@types/express': 4.17.17
-      file-system-cache: 2.3.0
     dev: true
 
   /@storybook/types@7.0.25:
@@ -11013,7 +10959,7 @@ packages:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
     dev: true
 
-  /next@13.4.7(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0):
+  /next@13.4.7(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-M8z3k9VmG51SRT6v5uDKdJXcAqLzP3C+vaKfLIAM0Mhx1um1G7MDnO63+m52qPdZfrTFzMZNzfsgvm3ghuVHIQ==}
     engines: {node: '>=16.8.0'}
     hasBin: true
