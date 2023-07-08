@@ -291,7 +291,7 @@ packages:
       '@babel/parser': 7.22.6
       '@babel/template': 7.22.5
       '@babel/traverse': 7.22.6
-      '@babel/types': 7.22.5
+      '@babel/types': 7.21.5
       convert-source-map: 1.9.0
       debug: 4.3.4
       gensync: 1.0.0-beta.2
@@ -327,7 +327,7 @@ packages:
     resolution: {integrity: sha512-F3fZga2uv09wFdEjEQIJxXALXfz0+JaOb7SabvVMmjHxeVTuGW8wgE8Vp1Hd7O+zMTYtcfEISGRzPkeiaPPsvg==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      '@babel/types': 7.22.5
+      '@babel/types': 7.21.5
       '@jridgewell/gen-mapping': 0.3.3
       '@jridgewell/trace-mapping': 0.3.18
       jsesc: 2.5.2
@@ -645,7 +645,7 @@ packages:
     engines: {node: '>=6.0.0'}
     hasBin: true
     dependencies:
-      '@babel/types': 7.22.5
+      '@babel/types': 7.21.5
     dev: true
 
   /@babel/parser@7.22.6:
@@ -2425,7 +2425,7 @@ packages:
       '@babel/plugin-transform-unicode-escapes': 7.22.5(@babel/core@7.21.8)
       '@babel/plugin-transform-unicode-regex': 7.22.5(@babel/core@7.21.8)
       '@babel/preset-modules': 0.1.5(@babel/core@7.21.8)
-      '@babel/types': 7.22.5
+      '@babel/types': 7.21.5
       babel-plugin-polyfill-corejs2: 0.3.3(@babel/core@7.21.8)
       babel-plugin-polyfill-corejs3: 0.6.0(@babel/core@7.21.8)
       babel-plugin-polyfill-regenerator: 0.4.1(@babel/core@7.21.8)
@@ -2632,13 +2632,13 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/code-frame': 7.22.5
-      '@babel/generator': 7.22.5
+      '@babel/generator': 7.21.9
       '@babel/helper-environment-visitor': 7.22.5
       '@babel/helper-function-name': 7.22.5
       '@babel/helper-hoist-variables': 7.22.5
       '@babel/helper-split-export-declaration': 7.22.6
-      '@babel/parser': 7.22.6
-      '@babel/types': 7.22.5
+      '@babel/parser': 7.21.9
+      '@babel/types': 7.21.5
       debug: 4.3.4
       globals: 11.12.0
     transitivePeerDependencies:
@@ -3358,7 +3358,7 @@ packages:
       '@jridgewell/trace-mapping': 0.3.18
       '@types/node': 20.4.1
       chalk: 4.1.2
-      collect-v8-coverage: 1.0.1
+      collect-v8-coverage: 1.0.2
       exit: 0.1.2
       glob: 7.2.3
       graceful-fs: 4.2.11
@@ -3401,7 +3401,7 @@ packages:
       '@jest/console': 29.6.0
       '@jest/types': 29.6.0
       '@types/istanbul-lib-coverage': 2.0.4
-      collect-v8-coverage: 1.0.1
+      collect-v8-coverage: 1.0.2
     dev: true
 
   /@jest/test-sequencer@29.6.0:
@@ -7472,8 +7472,8 @@ packages:
     engines: {iojs: '>= 1.0.0', node: '>= 0.12.0'}
     dev: true
 
-  /collect-v8-coverage@1.0.1:
-    resolution: {integrity: sha512-iBPtljfCNcTKNAto0KEtDfZ3qzjJvqE3aTGZsbhjSBlorqpXJlaWWtPO35D+ZImoC3KWejX64o+yPGxhWSTzfg==}
+  /collect-v8-coverage@1.0.2:
+    resolution: {integrity: sha512-lHl4d5/ONEbLlJvaJNtsF/Lz+WvB07u2ycqTYbdrq7UypDXailES4valYb2eWiJFxZlVmpGekfqoxQhzyFdT4Q==}
     dev: true
 
   /color-convert@1.9.3:
@@ -9457,7 +9457,7 @@ packages:
       foreground-child: 3.1.1
       jackspeak: 2.2.1
       minimatch: 9.0.2
-      minipass: 5.0.0
+      minipass: 6.0.2
       path-scurry: 1.10.0
     dev: true
 
@@ -9956,7 +9956,7 @@ packages:
       run-async: 2.4.1
       rxjs: 7.8.1
       string-width: 4.2.3
-      strip-ansi: 6.0.1
+      strip-ansi: 6.0.0
       through: 2.3.8
       wrap-ansi: 7.0.0
     dev: true
@@ -10779,7 +10779,7 @@ packages:
       '@types/node': 20.4.1
       chalk: 4.1.2
       cjs-module-lexer: 1.2.3
-      collect-v8-coverage: 1.0.1
+      collect-v8-coverage: 1.0.2
       glob: 7.2.3
       graceful-fs: 4.2.11
       jest-haste-map: 29.6.0
@@ -11556,6 +11556,11 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /minipass@6.0.2:
+    resolution: {integrity: sha512-MzWSV5nYVT7mVyWCwn2o7JH13w2TBRmmSqSRCKzTw+lmft9X4z+3wjvs06Tzijo5z4W/kahUCDpRXTF+ZrmF/w==}
+    engines: {node: '>=16 || 14 >=14.17'}
+    dev: true
+
   /minizlib@2.1.2:
     resolution: {integrity: sha512-bAxsR8BVfj60DWXHE3u30oHzfl4G7khkSuPW+qvpd7jFRHm7dLxOjUk1EHACJ/hxLY8phGJ0YhYHZo7jil7Qdg==}
     engines: {node: '>= 8'}
@@ -12158,7 +12163,7 @@ packages:
     engines: {node: '>=16 || 14 >=14.17'}
     dependencies:
       lru-cache: 10.0.0
-      minipass: 5.0.0
+      minipass: 6.0.2
     dev: true
 
   /path-to-regexp@0.1.7:
@@ -13522,7 +13527,7 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       char-regex: 1.0.2
-      strip-ansi: 6.0.1
+      strip-ansi: 6.0.0
     dev: true
 
   /string-width@4.2.3:
@@ -14719,7 +14724,7 @@ packages:
     dependencies:
       ansi-styles: 4.3.0
       string-width: 4.2.3
-      strip-ansi: 6.0.1
+      strip-ansi: 6.0.0
     dev: true
 
   /wrap-ansi@8.1.0:
