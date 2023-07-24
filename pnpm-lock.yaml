@@ -103,8 +103,8 @@ importers:
         specifier: 18.17.0
         version: 18.17.0
       '@types/react':
-        specifier: 18.2.15
-        version: 18.2.15
+        specifier: 18.2.16
+        version: 18.2.16
       '@types/react-dom':
         specifier: 18.2.7
         version: 18.2.7
@@ -176,8 +176,8 @@ importers:
         specifier: 20.4.4
         version: 20.4.4
       '@types/react':
-        specifier: 18.2.15
-        version: 18.2.15
+        specifier: 18.2.16
+        version: 18.2.16
       '@types/react-dom':
         specifier: 18.2.7
         version: 18.2.7
@@ -222,7 +222,7 @@ importers:
         version: 8.3.0(eslint@8.45.0)
       eslint-config-turbo:
         specifier: latest
-        version: 1.10.9(eslint@8.45.0)
+        version: 1.10.11(eslint@8.45.0)
       eslint-plugin-import:
         specifier: ^2.27.5
         version: 2.27.5(@typescript-eslint/parser@6.1.0)(eslint@8.45.0)
@@ -2525,7 +2525,7 @@ packages:
       react: '>=16'
     dependencies:
       '@types/mdx': 2.0.5
-      '@types/react': 18.2.15
+      '@types/react': 18.2.16
       react: 18.2.0
     dev: true
 
@@ -4678,11 +4678,11 @@ packages:
   /@types/react-dom@18.2.7:
     resolution: {integrity: sha512-GRaAEriuT4zp9N4p1i8BDBYmEyfo+xQ3yHjJU4eiK5NDa1RmUZG+unZABUTK4/Ox/M+GaHwb6Ow8rUITrtjszA==}
     dependencies:
-      '@types/react': 18.2.15
+      '@types/react': 18.2.16
     dev: true
 
-  /@types/react@18.2.15:
-    resolution: {integrity: sha512-oEjE7TQt1fFTFSbf8kkNuc798ahTUzn3Le67/PWjE8MAfYAD/qB7O8hSTcromLFqHCt9bcdOg5GXMokzTjJ5SA==}
+  /@types/react@18.2.16:
+    resolution: {integrity: sha512-LLFWr12ZhBJ4YVw7neWLe6Pk7Ey5R9OCydfuMsz1L8bZxzaawJj2p06Q8/EFEHDeTBQNFLF62X+CG7B2zIyu0Q==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.3
@@ -7325,13 +7325,13 @@ packages:
       eslint: 8.45.0
     dev: false
 
-  /eslint-config-turbo@1.10.9(eslint@8.45.0):
-    resolution: {integrity: sha512-YA5QWxWte/NiRJL0/Cv7aATfIvS5sUAuyD6ZuyTZEzwyU7E6FUXGo44amjf9INkyj96HrJ2nYWoFkCRx3vs6Ag==}
+  /eslint-config-turbo@1.10.11(eslint@8.45.0):
+    resolution: {integrity: sha512-NMzy6Mabjag6yTo01MsOJjbZoz0FV58L3+vOPcHU2vFP/9fIGG8yY8dtBvo+GPdffCXDdbOwZrdHZmC+s5SGvg==}
     peerDependencies:
       eslint: '>6.6.0'
     dependencies:
       eslint: 8.45.0
-      eslint-plugin-turbo: 1.10.9(eslint@8.45.0)
+      eslint-plugin-turbo: 1.10.11(eslint@8.45.0)
     dev: false
 
   /eslint-import-resolver-node@0.3.7:
@@ -7582,8 +7582,8 @@ packages:
       - typescript
     dev: false
 
-  /eslint-plugin-turbo@1.10.9(eslint@8.45.0):
-    resolution: {integrity: sha512-o8Nga4WFMvzF0lo3d3UyjGli2JOUn/4SRtRdvcf4EA9/TPotU/NUHqO16Cp0SHZJG/tGYIy5LY1O/EO7Mxbd1A==}
+  /eslint-plugin-turbo@1.10.11(eslint@8.45.0):
+    resolution: {integrity: sha512-horw5Ri7GScrB3yKYE7HUa34VhGCIPKKXmlAQDcvjLtMyrDytUD4/qVat4Ca3EQetk12wqoRdIEbMevby1PRNw==}
     peerDependencies:
       eslint: '>6.6.0'
     dependencies:
