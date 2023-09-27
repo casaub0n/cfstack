@@ -1,7 +1,8 @@
 const eslintConfig = {
-  // https://github.com/storybookjs/eslint-plugin-storybook
-  extends: ["next/core-web-vitals", "turbo", "prettier", "plugin:storybook/recommended"],
-  plugins: ["@typescript-eslint", "import", "unused-imports"],
+  /** @see https://github.com/storybookjs/eslint-plugin-storybook */
+  extends: ["next/core-web-vitals", "turbo", "plugin:storybook/recommended", "prettier"],
+  /** @see https://github.com/vercel/commerce/blob/main/.eslintrc.js */
+  plugins: ["@typescript-eslint", "import", "unused-imports", "unicorn"],
   rules: {
     "@next/next/no-html-link-for-pages": "off",
     "@typescript-eslint/no-unused-vars": "off",
