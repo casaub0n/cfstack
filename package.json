@@ -16,10 +16,10 @@
     "eslint-config-custom": "*",
     "git-cz": "^4.9.0",
     "prettier": "^3.0.0",
-    "turbo": "1.10.14"
+    "turbo": "1.10.15"
   },
   "engines": {
     "node": ">=18.16.0"
   },
-  "packageManager": "pnpm@8.8.0"
+  "packageManager": "pnpm@8.9.0"
 }
