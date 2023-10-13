@@ -1,4 +1,3 @@
-
 import { Layout } from "@/components/layouts";
 import { Top } from "@/components/templates/Top";
 
