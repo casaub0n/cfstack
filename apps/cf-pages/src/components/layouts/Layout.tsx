@@ -1,6 +1,7 @@
 import type { ReactElement } from "react";
 
 import Head from "next/head";
+import NextHeadSeo from "next-head-seo";
 
 import { Footer } from "@/components/organisms/footer";
 import { Header } from "@/components/organisms/header";
@@ -14,7 +15,6 @@ export const Layout = (page: ReactElement) => {
   return (
     <>
       <Head>
-        <title>{pageTitle("トップページ")}</title>
         <script
           id='json-ld'
           type='application/ld+json'
@@ -26,11 +26,15 @@ export const Layout = (page: ReactElement) => {
         <div className={styles.content}>{page}</div>
         <Footer />
       </div>
-      {/* <Script
-        id='json-ld'
-        type='application/ld+json'
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      /> */}
+      <NextHeadSeo
+        title={pageTitle("トップページ")}
+        description='（有）エーワンハウジング吉田のコーポレートサイト'
+        canonical='https://a-one-housing.com'
+        og={{
+          title: "（有）エーワンハウジング吉田のコーポレートサイト",
+          image: "https://https://a-one-housing.com/_next/image?url=%2Fimages%2Fme.jpg&w=384&q=75",
+        }}
+      />
     </>
   );
 };
