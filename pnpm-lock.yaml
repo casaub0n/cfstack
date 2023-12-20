@@ -119,7 +119,7 @@ importers:
         version: 29.7.0
       jest-html-reporters:
         specifier: ^3.0.11
-        version: 3.1.5
+        version: 3.1.6
       prettier:
         specifier: ^3.0.0
         version: 3.1.1
@@ -8945,8 +8945,8 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /jest-html-reporters@3.1.5:
-    resolution: {integrity: sha512-uw5w9j8nqxrki3VfXkHwz1bU0coyHuNNOmSSzJK8hLvImYNvIy4SHhTs9pPcI8E0nEnbqIXKxdRUb6qsHZUNIw==}
+  /jest-html-reporters@3.1.6:
+    resolution: {integrity: sha512-xn3Q7h4TiHnJ1zU2ISU5/jdH1hoeg0pDVBGRDW9c0CsfT8iOYgFi/4iL7uYmuf3b2Qr00tosqUG3joGlbB6wAA==}
     dependencies:
       fs-extra: 10.1.0
       open: 8.4.2
