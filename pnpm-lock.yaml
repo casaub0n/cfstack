@@ -5650,7 +5650,7 @@ packages:
       icss-utils: 5.1.0(postcss@8.4.38)
       postcss: 8.4.38
       postcss-modules-extract-imports: 3.0.0(postcss@8.4.38)
-      postcss-modules-local-by-default: 4.0.4(postcss@8.4.38)
+      postcss-modules-local-by-default: 4.0.5(postcss@8.4.38)
       postcss-modules-scope: 3.1.2(postcss@8.4.38)
       postcss-modules-values: 4.0.0(postcss@8.4.38)
       postcss-value-parser: 4.2.0
@@ -10384,8 +10384,8 @@ packages:
       postcss: 8.4.38
     dev: true
 
-  /postcss-modules-local-by-default@4.0.4(postcss@8.4.38):
-    resolution: {integrity: sha512-L4QzMnOdVwRm1Qb8m4x8jsZzKAaPAgrUF1r/hjDR2Xj7R+8Zsf97jAlSQzWtKx5YNiNGN8QxmPFIc/sh+RQl+Q==}
+  /postcss-modules-local-by-default@4.0.5(postcss@8.4.38):
+    resolution: {integrity: sha512-6MieY7sIfTK0hYfafw1OMEG+2bg8Q1ocHCpoWLqOKj3JXlKu4G7btkmM/B7lFubYkYWmRSPLZi5chid63ZaZYw==}
     engines: {node: ^10 || ^12 || >= 14}
     peerDependencies:
       postcss: ^8.1.0
