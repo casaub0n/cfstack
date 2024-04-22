@@ -36,7 +36,7 @@
     "rimraf": "^5.0.5",
     "scaffdog": "^3.0.0",
     "schema-dts": "^1.1.2",
-    "serve": "14.2.1",
+    "serve": "14.2.2",
     "stylelint": "^16.0.0",
     "stylelint-config-standard": "^36.0.0",
     "tsconfig": "*",
