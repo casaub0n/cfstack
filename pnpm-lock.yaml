@@ -1858,8 +1858,8 @@ packages:
   '@types/ms@0.7.34':
     resolution: {integrity: sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==}
 
-  '@types/node@18.19.32':
-    resolution: {integrity: sha512-2bkg93YBSDKk8DLmmHnmj/Rwr18TLx7/n+I23BigFwgexUJoMHZOd8X1OFxuF/W3NN0S2W2E5sVabI5CPinNvA==}
+  '@types/node@18.19.33':
+    resolution: {integrity: sha512-NR9+KrpSajr2qBVp/Yt5TU/rp+b5Mayi3+OlMlcg2cVCfRmcG5PWZ7S4+MG9PZ5gWBoc9Pd0BKSRViuBCRPu0A==}
 
   '@types/node@20.12.11':
     resolution: {integrity: sha512-vDg9PZ/zi+Nqp6boSOT7plNuthRugEKixDv5sFTIpkE89MmNtEArAShI4mxuX2+UrLEe9pxC1vm2cjm9YlWbJw==}
@@ -2172,9 +2172,9 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
 
-  address@2.0.2:
-    resolution: {integrity: sha512-u6nFssvaX9RHQmjMSqgT7b7QJbf/5/U8+ntbTL8vgABfIiEmm02ZSM5MwljKjCrIrm7iIbgYEya2YW6AaRccVA==}
-    engines: {node: '>= 16.0.0'}
+  address@1.2.2:
+    resolution: {integrity: sha512-4B/qKCfeE/ODUaAUpSwfzazo5x29WD4r3vXiWsB7I2mSDAihwEqKO+g8GELZUQSSAo5e1XTYh3ZVfLyxBc12nA==}
+    engines: {node: '>= 10.0.0'}
 
   adjust-sourcemap-loader@4.0.0:
     resolution: {integrity: sha512-OXwN5b9pCUXNQHJpwwD2qP40byEmSgzj8B4ydSN0uMNYWiFmJ6x6KwUllMmfk8Rwu/HJDFR7U8ubsWBoN0Xp0A==}
@@ -3088,9 +3088,9 @@ packages:
     resolution: {integrity: sha512-j/lJHyoLlWi6G1LDdLgvUtz60Zo5GEj+sVYtTVXnYLDPuzgC3llMxonXym9zIwhhUII8vjdw0LXxavpLqTbl1A==}
     engines: {node: '>=12'}
 
-  detect-port@1.6.0:
-    resolution: {integrity: sha512-iKO0phS1ebSLst7ULM1hw4qjndYHqyKe76Pk0q+QDvoANFth/f9Pp6oSZzOIM367SeRi+ufseIGvIiThTPERSg==}
-    engines: {node: '>= 14.0.0'}
+  detect-port@1.6.1:
+    resolution: {integrity: sha512-CmnVc+Hek2egPx1PeTFVta2W78xy2K/9Rkf6cC4T59S50tVnzKj+tnx5mmx5lwvCkujZ4uRrpRSuV+IVs3f90Q==}
+    engines: {node: '>= 4.0.0'}
     hasBin: true
 
   diff-sequences@29.6.3:
@@ -8350,7 +8350,7 @@ snapshots:
       '@storybook/node-logger': 8.0.10
       '@storybook/preview': 8.0.10
       '@storybook/preview-api': 8.0.10
-      '@types/node': 18.19.32
+      '@types/node': 18.19.33
       '@types/semver': 7.5.8
       browser-assert: 1.2.1
       case-sensitive-paths-webpack-plugin: 2.4.0
@@ -8540,14 +8540,14 @@ snapshots:
       '@storybook/telemetry': 8.0.10
       '@storybook/types': 8.0.10
       '@types/detect-port': 1.3.5
-      '@types/node': 18.19.32
+      '@types/node': 18.19.33
       '@types/pretty-hrtime': 1.0.3
       '@types/semver': 7.5.8
       better-opn: 3.0.2
       chalk: 4.1.2
       cli-table3: 0.6.4
       compression: 1.7.4
-      detect-port: 1.6.0
+      detect-port: 1.6.1
       express: 4.19.2
       fs-extra: 11.2.0
       globby: 11.1.0
@@ -8578,7 +8578,7 @@ snapshots:
       '@storybook/core-common': 8.0.10
       '@storybook/node-logger': 8.0.10
       '@storybook/types': 8.0.10
-      '@types/node': 18.19.32
+      '@types/node': 18.19.33
       ts-dedent: 2.2.0
     transitivePeerDependencies:
       - encoding
@@ -8694,7 +8694,7 @@ snapshots:
       '@storybook/preview-api': 8.0.10
       '@storybook/react': 8.0.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.4.5)
       '@storybook/types': 8.0.10
-      '@types/node': 18.19.32
+      '@types/node': 18.19.33
       '@types/semver': 7.5.8
       babel-loader: 9.1.3(@babel/core@7.24.5)(webpack@5.91.0(esbuild@0.20.2))
       css-loader: 6.11.0(webpack@5.91.0(esbuild@0.20.2))
@@ -8751,7 +8751,7 @@ snapshots:
       '@storybook/node-logger': 8.0.10
       '@storybook/react': 8.0.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.4.5)
       '@storybook/react-docgen-typescript-plugin': 1.0.6--canary.9.0c3f3b7.0(typescript@5.4.5)(webpack@5.91.0(esbuild@0.20.2))
-      '@types/node': 18.19.32
+      '@types/node': 18.19.33
       '@types/semver': 7.5.8
       find-up: 5.0.0
       fs-extra: 11.2.0
@@ -8821,7 +8821,7 @@ snapshots:
       '@storybook/types': 8.0.10
       '@types/escodegen': 0.0.6
       '@types/estree': 0.0.51
-      '@types/node': 18.19.32
+      '@types/node': 18.19.33
       acorn: 7.4.1
       acorn-jsx: 5.3.2(acorn@7.4.1)
       acorn-walk: 7.2.0
@@ -9083,7 +9083,7 @@ snapshots:
 
   '@types/ms@0.7.34': {}
 
-  '@types/node@18.19.32':
+  '@types/node@18.19.33':
     dependencies:
       undici-types: 5.26.5
 
@@ -9476,7 +9476,7 @@ snapshots:
 
   acorn@8.11.3: {}
 
-  address@2.0.2: {}
+  address@1.2.2: {}
 
   adjust-sourcemap-loader@4.0.0:
     dependencies:
@@ -10540,9 +10540,12 @@ snapshots:
     dependencies:
       execa: 5.1.1
 
-  detect-port@1.6.0:
+  detect-port@1.6.1:
     dependencies:
-      address: 2.0.2
+      address: 1.2.2
+      debug: 4.3.4
+    transitivePeerDependencies:
+      - supports-color
 
   diff-sequences@29.6.3: {}
 
