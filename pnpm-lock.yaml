@@ -128,7 +128,7 @@ importers:
         version: 5.0.10
       scaffdog:
         specifier: ^4.0.0
-        version: 4.0.0
+        version: 4.1.0
       schema-dts:
         specifier: ^1.1.2
         version: 1.1.2(typescript@5.6.2)
@@ -1151,8 +1151,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@inquirer/figures@1.0.5':
-    resolution: {integrity: sha512-79hP/VWdZ2UVc9bFGJnoQ/lQMpL74mGgzSYX1xUqCVk7/v73vJCMw1VuyWN1jGkZ9B3z7THAbySqGbCNefcjfA==}
+  '@inquirer/figures@1.0.6':
+    resolution: {integrity: sha512-yfZzps3Cso2UbM7WlxKwZQh2Hs6plrbjs1QnzQDZhK2DgyCo6D8AaHps9olkNcUFlcYERMqU3uJSp1gmy3s/qQ==}
     engines: {node: '>=18'}
 
   '@isaacs/cliui@8.0.2':
@@ -1387,20 +1387,20 @@ packages:
   '@rushstack/eslint-patch@1.10.4':
     resolution: {integrity: sha512-WJgX9nzTqknM393q1QJDJmoW28kUfEnybeTfVNcNAPnIx210RXm2DiXiHzfNPJNIUUb1tJnz/l4QGtJ30PgWmA==}
 
-  '@scaffdog/config@4.0.0':
-    resolution: {integrity: sha512-nFOpMidNcHG8MgiwOpxnw2LHPWOjtO1iJL7sxDyufyXqHedIRQURYh/EpHK8ssKi6P9fFfI0Fhwk7l3dEgzkBA==}
+  '@scaffdog/config@4.1.0':
+    resolution: {integrity: sha512-DQizoHcA8Fr6Ib/jM4OlzIAmJ6auYTkqFIGuK3olU+MiFPTcJPlI0LdDE1/k/sTJ/ZOOo8gsJdXiqe7SoUTXxw==}
 
-  '@scaffdog/core@4.0.0':
-    resolution: {integrity: sha512-5sGoH7DoqFMJK5AWmANdz5DoiEjIsP+6hBA+qc0NL70EwWbynRw0U3laTdjEgO9PFJ7o9+oLbco7w0V2HuwN3Q==}
+  '@scaffdog/core@4.1.0':
+    resolution: {integrity: sha512-Q2kseYMKru3RzE38gU0zVdVCJLT6eZzesVIVA5yJ1QWd/GWpN1b1pAwIVbpOVvVrkd9gfV1sOxSzixBtAwky+Q==}
 
-  '@scaffdog/engine@4.0.0':
-    resolution: {integrity: sha512-GlWNicSAqti3MRrpS6OnVfPPfWNnUpciinxQ5GPml4o2CXKfoUoSJ60FzZYV2OfPtTiNwMs53/UZ64kQFJ1ctA==}
+  '@scaffdog/engine@4.1.0':
+    resolution: {integrity: sha512-BZOdragEdOzReDjCoE8GZn157HyYIHmUvjWIRDmClXS61kxjIAUYhe3EtHecJSTRc54yfex31unF/k5lXPdcNQ==}
 
-  '@scaffdog/error@4.0.0':
-    resolution: {integrity: sha512-GrVcYZbVDVlrNB6u7jr8An8upeMOQ3lyg/Vsq+PvdZbzGcmV7f1QpIYpSIDSZNUZtDHDQPOm48LalvNrRBr/2g==}
+  '@scaffdog/error@4.1.0':
+    resolution: {integrity: sha512-XKjKp/WtsDGuRy5pE1fbyl5gTAZ/oyInM6PwO0srDUxcm/rYTR7IntF0lhN7IwZzuiGCGjBSqAnRKi5+x9U4kQ==}
 
-  '@scaffdog/types@4.0.0':
-    resolution: {integrity: sha512-J6alg4LEbwgj4bJ8rLV/CHDz+f7ymvt6Z17VaEGwISITWHyvfaeO5sjCB9596JD5SymjQlPcnVN++VKdaY8c+A==}
+  '@scaffdog/types@4.1.0':
+    resolution: {integrity: sha512-VW1mL0mRat+VQgTrg24UK7A+peSMstewAtATyIghd/nRUwk2vJ2WIXIcVlkhkLlF6AVakY6EtTKFU/IdcOXdgA==}
 
   '@sinclair/typebox@0.27.8':
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
@@ -2140,6 +2140,10 @@ packages:
   ansi-escapes@6.2.1:
     resolution: {integrity: sha512-4nJ3yixlEthEJ9Rk4vPcdBRkZvQZlYyu8j4/Mqz5sgIkddmEnH2Yj2ZrnP9S3tQOvSNRUIgVNF/1yPpRAGNRig==}
     engines: {node: '>=14.16'}
+
+  ansi-escapes@7.0.0:
+    resolution: {integrity: sha512-GdYO7a61mR0fOlAsvC9/rIHf7L96sBc6dEWzeOu+KAea5bZyQRPIpojrVoI4AXGJS/ycu/fBTdLrUkA4ODrvjw==}
+    engines: {node: '>=18'}
 
   ansi-html-community@0.0.8:
     resolution: {integrity: sha512-1APHAyr3+PCamwNw3bXCPp4HFLONZt/yIH0sZp0/469KWNTEy+qN5jQ3GVX6DMZ1UXAi34yVwtTeaG/HpBuuzw==}
@@ -3040,6 +3044,10 @@ packages:
   env-paths@2.2.1:
     resolution: {integrity: sha512-+h1lkLKhZMTYjog1VEpJNG7NZJWcuc2DDk/qsqSTRRCOXiLjeQ1d1/udrUGhqMxUgAlwKNZ0cf2uqan5GLuS2A==}
     engines: {node: '>=6'}
+
+  environment@1.1.0:
+    resolution: {integrity: sha512-xUtoPkMggbz0MPyPiIWr1Kp4aeWJjDZ6SMvURhimjdZgsRuDplF5/s9hcgGhyXMhs+6vpnuoiZ2kFiu3FMnS8Q==}
+    engines: {node: '>=18'}
 
   error-ex@1.3.2:
     resolution: {integrity: sha512-7dFHNmqeFSEt2ZBsCriorKnn3Z2pj+fd9kmI6QoWw4//DL+icEBfc0U7qJCisqrTsKTjw4fNFy2pW9OqStD84g==}
@@ -4401,8 +4409,8 @@ packages:
     resolution: {integrity: sha512-8XPvpAA8uyhfteu8pIvQxpJZ7SYYdpUivZpGy6sFsBuKRY/7rQGavedeB8aK+Zkyq6upMFVL/9AW6vOYzfRyLg==}
     engines: {node: '>=10'}
 
-  log-symbols@6.0.0:
-    resolution: {integrity: sha512-i24m8rpwhmPIS4zscNzK6MSEhk0DUWa/8iYQWxhffV8jkI4Phvs3F+quL5xvS0gdQR0FyTCMMH33Y78dDTzzIw==}
+  log-symbols@7.0.0:
+    resolution: {integrity: sha512-zrc91EDk2M+2AXo/9BTvK91pqb7qrPg2nX/Hy+u8a5qQlbaOflCKO+6SqgZ+M+xUFxGdKTgwnGiL96b1W3ikRA==}
     engines: {node: '>=18'}
 
   loose-envify@1.4.0:
@@ -5383,8 +5391,8 @@ packages:
     resolution: {integrity: sha512-xAg7SOnEhrm5zI3puOOKyy1OMcMlIJZYNJY7xLBwSze0UjhPLnWfj2GF2EpT0jmzaJKIWKHLsaSSajf35bcYnA==}
     engines: {node: '>=v12.22.7'}
 
-  scaffdog@4.0.0:
-    resolution: {integrity: sha512-pHH1O9tdI8TSQZTF9xXgAt+tiuyI6yosl41tQ8GOLrZBHCLRVd6JO2bIKKysgbntK16+D1746ICYJXLz1WTklw==}
+  scaffdog@4.1.0:
+    resolution: {integrity: sha512-BL0H/PC3OfVC+LosOy/ynai3A6SqzDn0W1+wOVkaJIHZ7LxfUyOPGvZPj7X3Qu4tnQ8gjcy+9KILlmiSeGqDmA==}
     hasBin: true
 
   scheduler@0.23.2:
@@ -5930,10 +5938,6 @@ packages:
     resolution: {integrity: sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==}
     engines: {node: '>=12.20'}
 
-  type-fest@4.17.0:
-    resolution: {integrity: sha512-9flrz1zkfLRH3jO3bLflmTxryzKMxVa7841VeMgBaNQGY6vH4RCcpN/sQLB7mQQYh1GZ5utT2deypMuCy4yicw==}
-    engines: {node: '>=16'}
-
   type-fest@4.26.1:
     resolution: {integrity: sha512-yOGpmOAL7CkKe/91I5O3gPICmJNLJ1G4zFYVAsRHg7M64biSnPtRj0WNQt++bRkjYOqjWXrhnUw1utzmVErAdg==}
     engines: {node: '>=16'}
@@ -6279,6 +6283,10 @@ packages:
 
   yoctocolors-cjs@2.1.2:
     resolution: {integrity: sha512-cYVsTjKl8b+FrnidjibDWskAv7UKOfcwaVZdp/it9n1s9fU3IkgDbhdIRKCW4JDsAlECJY0ytoVPT3sK6kideA==}
+    engines: {node: '>=18'}
+
+  yoctocolors@2.1.1:
+    resolution: {integrity: sha512-GQHQqAopRhwU8Kt1DDM8NjibDXHC8eoh1erhGAJPEyveY9qqVeXvVikNKrDz69sHowPMorbPUrH/mx8c50eiBQ==}
     engines: {node: '>=18'}
 
   zod@3.23.8:
@@ -7366,7 +7374,7 @@ snapshots:
   '@img/sharp-win32-x64@0.33.5':
     optional: true
 
-  '@inquirer/figures@1.0.5': {}
+  '@inquirer/figures@1.0.6': {}
 
   '@isaacs/cliui@8.0.2':
     dependencies:
@@ -7662,16 +7670,16 @@ snapshots:
 
   '@rushstack/eslint-patch@1.10.4': {}
 
-  '@scaffdog/config@4.0.0':
+  '@scaffdog/config@4.1.0':
     dependencies:
-      '@scaffdog/types': 4.0.0
+      '@scaffdog/types': 4.1.0
       jiti: 1.21.6
       zod: 3.23.8
 
-  '@scaffdog/core@4.0.0':
+  '@scaffdog/core@4.1.0':
     dependencies:
-      '@scaffdog/engine': 4.0.0
-      '@scaffdog/types': 4.0.0
+      '@scaffdog/engine': 4.1.0
+      '@scaffdog/types': 4.1.0
       mdast-util-to-string: 4.0.0
       remark-parse: 10.0.2
       unified: 10.1.2
@@ -7679,24 +7687,24 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@scaffdog/engine@4.0.0':
+  '@scaffdog/engine@4.1.0':
     dependencies:
-      '@scaffdog/error': 4.0.0
-      '@scaffdog/types': 4.0.0
+      '@scaffdog/error': 4.1.0
+      '@scaffdog/types': 4.1.0
       change-case: 5.4.4
       dayjs: 1.11.13
       is-plain-obj: 4.1.0
       plur: 5.1.0
 
-  '@scaffdog/error@4.0.0':
+  '@scaffdog/error@4.1.0':
     dependencies:
-      '@scaffdog/types': 4.0.0
+      '@scaffdog/types': 4.1.0
       chalk: 5.3.0
       string-length: 6.0.0
 
-  '@scaffdog/types@4.0.0':
+  '@scaffdog/types@4.1.0':
     dependencies:
-      type-fest: 4.17.0
+      type-fest: 4.26.1
 
   '@sinclair/typebox@0.27.8': {}
 
@@ -8772,6 +8780,10 @@ snapshots:
 
   ansi-escapes@6.2.1: {}
 
+  ansi-escapes@7.0.0:
+    dependencies:
+      environment: 1.1.0
+
   ansi-html-community@0.0.8: {}
 
   ansi-html@0.0.9: {}
@@ -9766,6 +9778,8 @@ snapshots:
   entities@4.5.0: {}
 
   env-paths@2.2.1: {}
+
+  environment@1.1.0: {}
 
   error-ex@1.3.2:
     dependencies:
@@ -10899,7 +10913,7 @@ snapshots:
 
   inquirer@9.3.6:
     dependencies:
-      '@inquirer/figures': 1.0.5
+      '@inquirer/figures': 1.0.6
       ansi-escapes: 4.3.2
       cli-width: 4.1.0
       external-editor: 3.1.0
@@ -11638,10 +11652,10 @@ snapshots:
       chalk: 4.1.2
       is-unicode-supported: 0.1.0
 
-  log-symbols@6.0.0:
+  log-symbols@7.0.0:
     dependencies:
-      chalk: 5.3.0
-      is-unicode-supported: 1.3.0
+      is-unicode-supported: 2.1.0
+      yoctocolors: 2.1.1
 
   loose-envify@1.4.0:
     dependencies:
@@ -12753,14 +12767,14 @@ snapshots:
     dependencies:
       xmlchars: 2.2.0
 
-  scaffdog@4.0.0:
+  scaffdog@4.1.0:
     dependencies:
-      '@scaffdog/config': 4.0.0
-      '@scaffdog/core': 4.0.0
-      '@scaffdog/engine': 4.0.0
-      '@scaffdog/error': 4.0.0
-      '@scaffdog/types': 4.0.0
-      ansi-escapes: 6.2.1
+      '@scaffdog/config': 4.1.0
+      '@scaffdog/core': 4.1.0
+      '@scaffdog/engine': 4.1.0
+      '@scaffdog/error': 4.1.0
+      '@scaffdog/types': 4.1.0
+      ansi-escapes: 7.0.0
       chalk: 5.3.0
       cli-truncate: 4.0.0
       consola: 3.2.3
@@ -12773,7 +12787,7 @@ snapshots:
       inquirer: 9.3.6
       inquirer-autocomplete-prompt: 3.0.1(inquirer@9.3.6)
       is-plain-obj: 4.1.0
-      log-symbols: 6.0.0
+      log-symbols: 7.0.0
       micromatch: 4.0.8
       node-emoji: 2.1.3
       plur: 5.1.0
@@ -13424,8 +13438,6 @@ snapshots:
 
   type-fest@2.19.0: {}
 
-  type-fest@4.17.0: {}
-
   type-fest@4.26.1: {}
 
   type-is@1.6.18:
@@ -13832,5 +13844,7 @@ snapshots:
   yocto-queue@1.1.1: {}
 
   yoctocolors-cjs@2.1.2: {}
+
+  yoctocolors@2.1.1: {}
 
   zod@3.23.8: {}
