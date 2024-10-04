@@ -9,16 +9,16 @@
   },
   "devDependencies": {
     "@storybook/addon-docs": "^8.0.0",
-    "@storybook/addon-essentials": "8.3.4",
-    "@storybook/addon-interactions": "8.3.4",
-    "@storybook/addon-links": "8.3.4",
+    "@storybook/addon-essentials": "8.3.5",
+    "@storybook/addon-interactions": "8.3.5",
+    "@storybook/addon-links": "8.3.5",
     "@storybook/blocks": "^8.0.0",
-    "@storybook/nextjs": "8.3.4",
-    "@storybook/react": "8.3.4",
+    "@storybook/nextjs": "8.3.5",
+    "@storybook/react": "8.3.5",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "serve": "14.2.3",
-    "storybook": "8.3.4",
+    "storybook": "8.3.5",
     "tsconfig-paths-webpack-plugin": "^4.0.1"
   }
 }
