@@ -46,7 +46,7 @@ importers:
         version: 8.4.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.5(prettier@3.4.1))
       '@storybook/nextjs':
         specifier: 8.4.5
-        version: 8.4.5(esbuild@0.24.0)(next@15.0.3(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.5(prettier@3.4.1))(type-fest@4.28.1)(typescript@5.7.2)(webpack-hot-middleware@2.26.1)(webpack@5.96.1(esbuild@0.24.0))
+        version: 8.4.5(esbuild@0.24.0)(next@15.0.3(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.5(prettier@3.4.1))(type-fest@4.29.0)(typescript@5.7.2)(webpack-hot-middleware@2.26.1)(webpack@5.96.1(esbuild@0.24.0))
       '@storybook/react':
         specifier: 8.4.5
         version: 8.4.5(@storybook/test@8.4.5(storybook@8.4.5(prettier@3.4.1)))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.5(prettier@3.4.1))(typescript@5.7.2)
@@ -5717,8 +5717,8 @@ packages:
     resolution: {integrity: sha512-yOGpmOAL7CkKe/91I5O3gPICmJNLJ1G4zFYVAsRHg7M64biSnPtRj0WNQt++bRkjYOqjWXrhnUw1utzmVErAdg==}
     engines: {node: '>=16'}
 
-  type-fest@4.28.1:
-    resolution: {integrity: sha512-LO/+yb3mf46YqfUC7QkkoAlpa7CTYh//V1Xy9+NQ+pKqDqXIq0NTfPfQRwFfCt+if4Qkwb9gzZfsl6E5TkXZGw==}
+  type-fest@4.29.0:
+    resolution: {integrity: sha512-RPYt6dKyemXJe7I6oNstcH24myUGSReicxcHTvCLgzm4e0n8y05dGvcGB15/SoPRBmhlMthWQ9pvKyL81ko8nQ==}
     engines: {node: '>=16'}
 
   typed-array-buffer@1.0.2:
@@ -7391,7 +7391,7 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@pmmmwh/react-refresh-webpack-plugin@0.5.15(react-refresh@0.14.2)(type-fest@4.28.1)(webpack-hot-middleware@2.26.1)(webpack@5.96.1(esbuild@0.24.0))':
+  '@pmmmwh/react-refresh-webpack-plugin@0.5.15(react-refresh@0.14.2)(type-fest@4.29.0)(webpack-hot-middleware@2.26.1)(webpack@5.96.1(esbuild@0.24.0))':
     dependencies:
       ansi-html: 0.0.9
       core-js-pure: 3.39.0
@@ -7403,7 +7403,7 @@ snapshots:
       source-map: 0.7.4
       webpack: 5.96.1(esbuild@0.24.0)
     optionalDependencies:
-      type-fest: 4.28.1
+      type-fest: 4.29.0
       webpack-hot-middleware: 2.26.1
 
   '@pnpm/config.env-replace@1.1.0': {}
@@ -7671,7 +7671,7 @@ snapshots:
     dependencies:
       storybook: 8.4.5(prettier@3.4.1)
 
-  '@storybook/nextjs@8.4.5(esbuild@0.24.0)(next@15.0.3(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.5(prettier@3.4.1))(type-fest@4.28.1)(typescript@5.7.2)(webpack-hot-middleware@2.26.1)(webpack@5.96.1(esbuild@0.24.0))':
+  '@storybook/nextjs@8.4.5(esbuild@0.24.0)(next@15.0.3(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.5(prettier@3.4.1))(type-fest@4.29.0)(typescript@5.7.2)(webpack-hot-middleware@2.26.1)(webpack@5.96.1(esbuild@0.24.0))':
     dependencies:
       '@babel/core': 7.26.0
       '@babel/plugin-syntax-bigint': 7.8.3(@babel/core@7.26.0)
@@ -7686,7 +7686,7 @@ snapshots:
       '@babel/preset-react': 7.25.9(@babel/core@7.26.0)
       '@babel/preset-typescript': 7.26.0(@babel/core@7.26.0)
       '@babel/runtime': 7.26.0
-      '@pmmmwh/react-refresh-webpack-plugin': 0.5.15(react-refresh@0.14.2)(type-fest@4.28.1)(webpack-hot-middleware@2.26.1)(webpack@5.96.1(esbuild@0.24.0))
+      '@pmmmwh/react-refresh-webpack-plugin': 0.5.15(react-refresh@0.14.2)(type-fest@4.29.0)(webpack-hot-middleware@2.26.1)(webpack@5.96.1(esbuild@0.24.0))
       '@storybook/builder-webpack5': 8.4.5(esbuild@0.24.0)(storybook@8.4.5(prettier@3.4.1))(typescript@5.7.2)
       '@storybook/preset-react-webpack': 8.4.5(@storybook/test@8.4.5(storybook@8.4.5(prettier@3.4.1)))(esbuild@0.24.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.5(prettier@3.4.1))(typescript@5.7.2)
       '@storybook/react': 8.4.5(@storybook/test@8.4.5(storybook@8.4.5(prettier@3.4.1)))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.5(prettier@3.4.1))(typescript@5.7.2)
@@ -8656,7 +8656,7 @@ snapshots:
       chalk: 5.3.0
       cli-boxes: 3.0.0
       string-width: 7.2.0
-      type-fest: 4.28.1
+      type-fest: 4.29.0
       widest-line: 5.0.0
       wrap-ansi: 9.0.0
 
@@ -9265,7 +9265,7 @@ snapshots:
 
   dot-prop@9.0.0:
     dependencies:
-      type-fest: 4.28.1
+      type-fest: 4.29.0
 
   dotenv-cli@7.4.4:
     dependencies:
@@ -12781,7 +12781,7 @@ snapshots:
 
   type-fest@4.26.1: {}
 
-  type-fest@4.28.1: {}
+  type-fest@4.29.0: {}
 
   typed-array-buffer@1.0.2:
     dependencies:
