@@ -11,7 +11,7 @@
     "storybook": "turbo run storybook"
   },
   "devDependencies": {
-    "dotenv-cli": "^7.2.1",
+    "dotenv-cli": "^8.0.0",
     "eslint": "^8.42.0",
     "eslint-config-custom": "*",
     "git-cz": "^4.9.0",
